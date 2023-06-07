@@ -1,0 +1,39 @@
+.login-area {
+  padding: 50px 0;
+}
+.login-area .container {
+  border: 1px solid #ff4646;
+  padding: 20px 50px;
+}
+.login-area .heading-title {
+  font-size: 60px;
+  text-align: center;
+}
+.login-area p {
+  letter-spacing: 8px;
+  margin-bottom: 7px;
+  color: #ff4646;
+  font-weight: 500;
+  text-align: center;
+}
+.login-area label {
+  font-weight: 600;
+}
+.login-area form {
+  padding: 20px 0;
+}
+/* .login-area button {
+  background: #ff4646;
+  border: 0;
+  padding: 8px 20px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 0;
+}
+.login-area button:hover {
+  background: #253b70;
+  border-radius: 20px;
+  transition: 0.3s;
+} */
