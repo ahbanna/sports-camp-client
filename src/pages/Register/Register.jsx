@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Register.css";
 import { Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { AuthContext } from "../../providers/AuthProvider";
 const Register = () => {
   // TODO reset have to apply
+  const { createUser } = useContext(AuthContext);
   const {
     register,
     handleSubmit,
@@ -13,6 +15,10 @@ const Register = () => {
   } = useForm();
   const onSubmit = (data) => {
     console.log(data);
+    createUser(data.email, data.password).then((result) => {
+      const loggedUser = result.user;
+      console.log(loggedUser);
+    });
   };
   return (
     <div className="register-area">

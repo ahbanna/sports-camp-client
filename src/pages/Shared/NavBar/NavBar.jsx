@@ -45,6 +45,7 @@ import React from "react";
 import { Navbar, Nav, Container, Image } from "react-bootstrap";
 import logo from "../../../assets/logo.png";
 import "./NavBar.css";
+import { NavLink } from "react-router-dom";
 
 const NavBar = ({ loggedIn, userProfilePicture }) => {
   return (
@@ -57,14 +58,17 @@ const NavBar = ({ loggedIn, userProfilePicture }) => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
-              <Nav.Link href="/">Home</Nav.Link>
+              {/* <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/instructors">Instructors</Nav.Link>
-              <Nav.Link href="/classes">Classes</Nav.Link>
+              <Nav.Link href="/classes">Classes</Nav.Link> */}
+              <NavLink to="/">Home</NavLink>
+              <NavLink to="/instructors">Instructors</NavLink>
+              <NavLink to="/classes">Classes</NavLink>
             </Nav>
             <Nav>
               {loggedIn ? (
                 <>
-                  <Nav.Link href="/dashboard">
+                  <NavLink href="/dashboard">
                     <Image
                       src={userProfilePicture}
                       alt="User Profile"
@@ -72,10 +76,10 @@ const NavBar = ({ loggedIn, userProfilePicture }) => {
                       height="30"
                       roundedCircle
                     />
-                  </Nav.Link>
+                  </NavLink>
                 </>
               ) : (
-                <Nav.Link href="/login">Login</Nav.Link>
+                <NavLink to="/login">Login</NavLink>
               )}
             </Nav>
           </Navbar.Collapse>

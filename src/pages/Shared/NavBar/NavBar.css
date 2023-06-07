@@ -1,9 +1,20 @@
-.navbar-expand-lg .navbar-collapse {
-  /* justify-content: space-between; */
-}
 .header-area {
   background-color: #171c34;
 }
-.navbar-nav a {
+/* .navbar-nav a {
+  color: #fff;
+} */
+.header-area a.active {
+  color: #fe5000;
+}
+.header-area a {
+  background-color: transparent;
+}
+.header-area a {
+  text-decoration: navajowhite;
+  padding: 0 15px;
+  font-size: 16px;
+  /* text-transform: uppercase; */
+  font-weight: 600;
   color: #fff;
 }

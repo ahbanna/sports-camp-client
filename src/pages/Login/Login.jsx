@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Login.css";
 import { Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import { useForm } from "react-hook-form";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Login = () => {
+  const { signIn } = useContext(AuthContext);
   const {
     register,
     handleSubmit,
