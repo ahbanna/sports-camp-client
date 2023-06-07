@@ -1,0 +1,80 @@
+.footer-area {
+  background: #6232d6;
+  padding: 40px 0 1px 0;
+}
+.footer-area h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  padding-bottom: 20px;
+}
+.footer-area h3::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 1px;
+  content: "";
+  background: #804bff;
+}
+.footer-area p {
+  color: #fff;
+  margin: 15px 0;
+}
+.social-link h4 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.social-icon {
+  list-style: none;
+}
+.social-link ul {
+  padding: 0;
+  display: flex;
+}
+.social-icon li {
+  margin-right: 15px;
+}
+.social-icon li:hover a {
+  color: #ff4646;
+  transition: 0.3s;
+}
+.social-icon li a {
+  color: #fff;
+  /* font-size: 16px; */
+}
+.footer-contact {
+  padding-left: 70px;
+}
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+  color: #fff;
+}
+.footer-subscribe form input {
+  height: 45px;
+  width: 100%;
+  padding: 0px 20px;
+  background: none;
+  color: #fff;
+  border: 1px solid #7346e0;
+  margin-bottom: 25px;
+}
+.footer-subscribe form .submit-btn input {
+  width: 50%;
+  background: #ff4646;
+  margin-top: -10px;
+}
+.copyright {
+  border-top: 1px solid #804bff;
+}
+.copyright p {
+  text-align: center;
+}
+@media only screen and (max-width: 576px) {
+  .footer-contact {
+    padding-left: 0;
+  }
+}
