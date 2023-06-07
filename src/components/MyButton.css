@@ -1,0 +1,59 @@
+.custom-button {
+  background-color: #fe5000;
+  padding: 8px 16px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.custom-button:before {
+  content: "";
+  display: block;
+  width: 68%;
+  height: 100%;
+  background: #1d1e21;
+  position: absolute;
+  top: 0;
+  left: -1em;
+  -webkit-transition: width 0.55s cubic-bezier(0, 0.81, 0.59, 0.99) 0s;
+  -moz-transition: width 0.55s cubic-bezier(0, 0.81, 0.59, 0.99) 0s;
+  transition: width 0.55s cubic-bezier(0, 0.81, 0.59, 0.99) 0s;
+  z-index: 0;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+.custom-button:after {
+  content: "";
+  display: block;
+  width: -webkit-calc(100% - 2em);
+  width: -moz-calc(100% - 2em);
+  width: calc(100% - 2em);
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(-100% + 1em);
+  left: -moz-calc(-100% + 1em);
+  left: calc(-100% + 1em);
+  -webkit-transform: skew(-20deg) translateZ(-1px);
+  -moz-transform: skew(-20deg) translateZ(-1px);
+  -ms-transform: skew(-20deg) translateZ(-1px);
+  transform: skew(-20deg) translateZ(-1px);
+  -webkit-transition: left 0.55s cubic-bezier(0, 0.81, 0.59, 0.99) 0s;
+  -moz-transition: left 0.55s cubic-bezier(0, 0.81, 0.59, 0.99) 0s;
+  transition: left 0.55s cubic-bezier(0, 0.81, 0.59, 0.99) 0s;
+  z-index: 0;
+}
+.custom-button:hover {
+  background-color: #fe5000;
+}
+
+.custom-button:hover:before {
+  width: 100%;
+}
