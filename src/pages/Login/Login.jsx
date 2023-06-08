@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
@@ -16,6 +17,28 @@ const Login = () => {
   } = useForm();
   const handleLogin = (data) => {
     console.log(data);
+    signIn(data.email, data.password).then((result) => {
+      const loginUser = result.user;
+      console.log(loginUser);
+      // sweet alert starts
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "center",
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener("mouseenter", Swal.stopTimer);
+          toast.addEventListener("mouseleave", Swal.resumeTimer);
+        },
+      });
+
+      Toast.fire({
+        icon: "success",
+        title: "Login successfully",
+      });
+      // sweet alert end
+    });
   };
   return (
     <div className="login-area">

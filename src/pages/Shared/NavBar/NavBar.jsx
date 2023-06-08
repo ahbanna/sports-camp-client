@@ -79,10 +79,10 @@ const NavBar = () => {
             <Nav>
               {user ? (
                 <>
-                  <button onClick={handleLogout}></button>
+                  <button onClick={handleLogout}>Logout</button>
                   <NavLink to="/dashboard">
                     <Image
-                      src={userProfilePicture}
+                      src=""
                       alt="User Profile"
                       width="30"
                       height="30"
