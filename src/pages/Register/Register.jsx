@@ -52,13 +52,11 @@ const Register = () => {
             <Form.Label>Password</Form.Label>
             <Form.Control
               type="password"
-              name="password"
               placeholder="Password"
               {...register("password", {
                 required: true,
                 required: true,
                 minLength: 6,
-                maxLength: 9,
                 pattern: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])/,
               })}
             />

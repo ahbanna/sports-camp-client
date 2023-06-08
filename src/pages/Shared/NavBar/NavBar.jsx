@@ -41,20 +41,31 @@
 
 // export default NavBar;
 
-import React from "react";
+import React, { useContext } from "react";
 import { Navbar, Nav, Container, Image } from "react-bootstrap";
 import logo from "../../../assets/logo.png";
 import "./NavBar.css";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../../../providers/AuthProvider";
 
-const NavBar = ({ loggedIn, userProfilePicture }) => {
+const NavBar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogout = () => {
+    logOut()
+      .then(() => {})
+      .then((error) => console.log(error));
+  };
+
   return (
     <div className="header-area">
       <Navbar collapseOnSelect expand="lg" variant="dark">
         <Container>
-          <Navbar.Brand href="/">
+          {/* <Navbar.Brand href="/">
             <Image src={logo} alt="Sports Camp" width="100" height="40" />
-          </Navbar.Brand>
+          </Navbar.Brand> */}
+          <NavLink to="/">
+            <Image src={logo} alt="Sports Camp" width="100" height="40" />
+          </NavLink>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
@@ -66,9 +77,10 @@ const NavBar = ({ loggedIn, userProfilePicture }) => {
               <NavLink to="/classes">Classes</NavLink>
             </Nav>
             <Nav>
-              {loggedIn ? (
+              {user ? (
                 <>
-                  <NavLink href="/dashboard">
+                  <button onClick={handleLogout}></button>
+                  <NavLink to="/dashboard">
                     <Image
                       src={userProfilePicture}
                       alt="User Profile"
