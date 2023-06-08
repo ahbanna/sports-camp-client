@@ -80,8 +80,8 @@ const NavBar = () => {
             <Nav>
               {user ? (
                 <>
+                  <NavLink to="/dashboard">Dashboard</NavLink>
                   <p className="user-name">{user.displayName}</p>
-
                   <NavLink to="/dashboard">
                     <Image
                       src={user.photoURL}
@@ -91,6 +91,7 @@ const NavBar = () => {
                       roundedCircle
                     />
                   </NavLink>
+
                   <button onClick={handleLogout}>Logout</button>
                 </>
               ) : (

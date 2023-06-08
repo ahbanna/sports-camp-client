@@ -1,0 +1,34 @@
+.instructor-area {
+  background: #eaeaea;
+  padding: 60px 0;
+}
+.all-instructor {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.single-instructor {
+  margin-bottom: 35px;
+}
+.single-instructor .card-title {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.single-instructor p {
+  color: #707980;
+}
+.single-instructor img {
+  height: 350px;
+}
+.single-instructor .card {
+  border: none;
+}
+.instructor-area .section-title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.instructor-area .section-title p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: -20px;
+}

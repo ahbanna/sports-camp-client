@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
+import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 const Register = () => {
   // TODO reset have to apply
   const { createUser, updateUserProfile } = useContext(AuthContext);
@@ -25,14 +26,26 @@ const Register = () => {
       updateUserProfile(data.name, data.photoURL)
         .then(() => {
           console.log("User profile updated");
-          // TODO: inserted id ke dite hobe?
-          reset();
-          // sweet alert starts
-          Swal.fire({
-            title: "Successfully sign up",
-            icon: "success",
-          });
-          navigate("/");
+          const saveUser = { name: data.name, email: data.email };
+          fetch("http://localhost:5000/users", {
+            method: "POST",
+            headers: {
+              "content-type": "application/json",
+            },
+            body: JSON.stringify(saveUser),
+          })
+            .then((res) => res.json())
+            .then((data) => {
+              if (data.insertedId) {
+                reset();
+                // sweet alert starts
+                Swal.fire({
+                  title: "Successfully sign up",
+                  icon: "success",
+                });
+                navigate("/");
+              }
+            });
         })
         .catch((error) => console.log(error));
       // // sweet alert starts
@@ -139,7 +152,7 @@ const Register = () => {
               Already have an account? <Link to="/login">Login</Link>
             </Form.Text>
           </div>
-          // TODO: google signin have to apply
+          <SocialLogin></SocialLogin>
         </Form>
       </div>
     </div>
