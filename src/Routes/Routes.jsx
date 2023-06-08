@@ -5,6 +5,7 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import Secret from "../pages/Secret/Secret";
 import PrivateRoute from "./PrivateRoute";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
             <Secret></Secret>
           </PrivateRoute>
         ),
+      },
+      {
+        path: "*",
+        element: <ErrorPage></ErrorPage>,
       },
     ],
   },

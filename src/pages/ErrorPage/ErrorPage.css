@@ -1,0 +1,13 @@
+.error-icon {
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+}
+.error-text {
+  text-align: center;
+  margin-top: -50px;
+}
+.error-text h3 {
+  font-weight: 700;
+  font-size: 42px;
+}

@@ -6,6 +6,7 @@ import { FaGoogle } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
+import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
@@ -79,12 +80,13 @@ const Login = () => {
             <p className="error-msg"></p>
           </div>
         </Form>
-        <div className="google-login">
+        {/* <div className="google-login">
           <h4>OR</h4>
           <Button onClick="">
             <FaGoogle></FaGoogle> Login With Google
           </Button>
-        </div>
+        </div> */}
+        <SocialLogin></SocialLogin>
       </div>
     </div>
   );

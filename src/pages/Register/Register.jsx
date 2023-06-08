@@ -25,6 +25,7 @@ const Register = () => {
       updateUserProfile(data.name, data.photoURL)
         .then(() => {
           console.log("User profile updated");
+          // TODO: inserted id ke dite hobe?
           reset();
           // sweet alert starts
           Swal.fire({
@@ -92,7 +93,6 @@ const Register = () => {
               <span className="text-danger">Photo is required</span>
             )}
           </Form.Group>
-
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Password</Form.Label>
             <Form.Control
@@ -138,9 +138,8 @@ const Register = () => {
             <Form.Text>
               Already have an account? <Link to="/login">Login</Link>
             </Form.Text>
-            <p className="text-success"></p>
-            <p className="error-msg"></p>
           </div>
+          // TODO: google signin have to apply
         </Form>
       </div>
     </div>
