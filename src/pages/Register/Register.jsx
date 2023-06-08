@@ -1,17 +1,19 @@
 import React, { useContext } from "react";
 import "./Register.css";
 import { Button, Form } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
 const Register = () => {
   // TODO reset have to apply
-  const { createUser } = useContext(AuthContext);
+  const { createUser, updateUserProfile } = useContext(AuthContext);
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
     watch,
+    reset,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
@@ -19,24 +21,37 @@ const Register = () => {
     createUser(data.email, data.password).then((result) => {
       const newUser = result.user;
       console.log(newUser);
-      // sweet alert starts
-      const Toast = Swal.mixin({
-        toast: true,
-        position: "center",
-        showConfirmButton: false,
-        timer: 2000,
-        timerProgressBar: true,
-        didOpen: (toast) => {
-          toast.addEventListener("mouseenter", Swal.stopTimer);
-          toast.addEventListener("mouseleave", Swal.resumeTimer);
-        },
-      });
+      // update user
+      updateUserProfile(data.name, data.photoURL)
+        .then(() => {
+          console.log("User profile updated");
+          reset();
+          // sweet alert starts
+          Swal.fire({
+            title: "Successfully sign up",
+            icon: "success",
+          });
+          navigate("/");
+        })
+        .catch((error) => console.log(error));
+      // // sweet alert starts
+      // const Toast = Swal.mixin({
+      //   toast: true,
+      //   position: "center",
+      //   showConfirmButton: false,
+      //   timer: 2000,
+      //   timerProgressBar: true,
+      //   didOpen: (toast) => {
+      //     toast.addEventListener("mouseenter", Swal.stopTimer);
+      //     toast.addEventListener("mouseleave", Swal.resumeTimer);
+      //   },
+      // });
 
-      Toast.fire({
-        icon: "success",
-        title: "Signed in successfully",
-      });
-      // sweet alert end
+      // Toast.fire({
+      //   icon: "success",
+      //   title: "Signed in successfully",
+      // });
+      // // sweet alert end
     });
   };
   return (
@@ -64,6 +79,17 @@ const Register = () => {
             />
             {errors.email && (
               <span className="text-danger">Email is required</span>
+            )}
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>Photo URL</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Photo URL"
+              {...register("photoURL", { required: true })}
+            />
+            {errors.photoURL && (
+              <span className="text-danger">Photo is required</span>
             )}
           </Form.Group>
 

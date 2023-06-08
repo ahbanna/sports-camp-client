@@ -18,3 +18,9 @@
   font-weight: 600;
   color: #fff;
 }
+p.user-name {
+  margin: 0;
+  font-weight: 600;
+  padding: 0 10px;
+  color: #fff;
+}

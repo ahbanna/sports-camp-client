@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./Login.css";
 import { Button, Form } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../providers/AuthProvider";
@@ -9,6 +9,11 @@ import Swal from "sweetalert2";
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
+  // navigate starts.it use when user successfully login go to desire page
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
+  // navigate end
   const {
     register,
     handleSubmit,
@@ -38,6 +43,7 @@ const Login = () => {
         title: "Login successfully",
       });
       // sweet alert end
+      navigate(from, { replace: true });
     });
   };
   return (

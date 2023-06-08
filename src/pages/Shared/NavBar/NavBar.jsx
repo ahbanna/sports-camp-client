@@ -75,20 +75,23 @@ const NavBar = () => {
               <NavLink to="/">Home</NavLink>
               <NavLink to="/instructors">Instructors</NavLink>
               <NavLink to="/classes">Classes</NavLink>
+              <NavLink to="/secret">Secret</NavLink>
             </Nav>
             <Nav>
               {user ? (
                 <>
-                  <button onClick={handleLogout}>Logout</button>
+                  <p className="user-name">{user.displayName}</p>
+
                   <NavLink to="/dashboard">
                     <Image
-                      src=""
+                      src={user.photoURL}
                       alt="User Profile"
                       width="30"
                       height="30"
                       roundedCircle
                     />
                   </NavLink>
+                  <button onClick={handleLogout}>Logout</button>
                 </>
               ) : (
                 <NavLink to="/login">Login</NavLink>

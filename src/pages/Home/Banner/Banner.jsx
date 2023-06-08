@@ -5,6 +5,7 @@ import banner1 from "../../../assets/banner/banner1.jpg";
 import banner2 from "../../../assets/banner/banner2.png";
 import banner3 from "../../../assets/banner/banner3.jpg";
 import banner4 from "../../../assets/banner/banner4.jpg";
+import banner5 from "../../../assets/banner/banner5.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import { Pagination } from "swiper";
 import "swiper/css";
@@ -88,6 +89,9 @@ const Banner = () => {
               </div>
             </div>
           </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={banner5} alt="" />
         </SwiperSlide>
       </Swiper>
     </div>
