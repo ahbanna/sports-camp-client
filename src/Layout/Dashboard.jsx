@@ -6,6 +6,8 @@ import {
   FaHome,
   FaUsers,
   FaWallet,
+  FaCheckDouble,
+  FaHeart,
 } from "react-icons/fa";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import logo from "../../src/assets/logo.png";
@@ -58,12 +60,12 @@ const Dashboard = () => {
                 <>
                   <li>
                     <NavLink to="/dashboard/selectedclasses">
-                      <FaAward></FaAward> Selected Classes
+                      <FaHeart></FaHeart> Selected Classes
                     </NavLink>
                   </li>
                   <li>
                     <NavLink to="/dashboard/enrolledclesses">
-                      <FaAward></FaAward> Enrolled Classes
+                      <FaCheckDouble></FaCheckDouble> Enrolled Classes
                     </NavLink>
                   </li>
                 </>
