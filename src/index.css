@@ -27,3 +27,6 @@
 .sideabar-menu {
   padding: 40px 20px;
 }
+.sideabar-menu a.active {
+  color: #000;
+}

@@ -113,7 +113,6 @@ const Register = () => {
               placeholder="Password"
               {...register("password", {
                 required: true,
-                required: true,
                 minLength: 6,
                 pattern: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])/,
               })}
