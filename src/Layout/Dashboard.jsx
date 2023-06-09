@@ -9,11 +9,15 @@ import {
 } from "react-icons/fa";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import logo from "../../src/assets/logo.png";
+import useAdmin from "../hooks/useAdmin";
+import useInstructor from "../hooks/useInstructor";
 
 const Dashboard = () => {
   // TODO: admin functionality should apply dynamically
-  const isAdmin = true;
-  const isInstructor = true;
+  // const isAdmin = true;
+
+  const [isAdmin] = useAdmin();
+  const [isInstructor] = useInstructor();
   return (
     <div>
       <div className="row">
