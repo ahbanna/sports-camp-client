@@ -1,0 +1,13 @@
+.single-class img {
+  height: 220px;
+}
+.single-class span {
+  font-weight: 500;
+}
+.single-class .card-title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.single-class p {
+  margin-bottom: 8px;
+}

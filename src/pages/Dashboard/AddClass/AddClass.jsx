@@ -22,6 +22,7 @@ const AddClass = () => {
       email,
       availableSeat,
       price,
+      status: "pending",
     };
     console.log(newClass);
 
@@ -49,6 +50,7 @@ const AddClass = () => {
   };
   return (
     <div>
+      {/* TODO: form design */}
       <div className="container">
         <div className="section-title">
           <h3 className="heading-title">Add A Class</h3>
