@@ -4,6 +4,9 @@ import "./Classes.css";
 
 const Classes = () => {
   const [classes, setClasses] = useState([]);
+  //
+  // const [isAdmin, setIsAdmin] = useState(false);
+  //
   useEffect(() => {
     fetch("http://localhost:5000/allclasses")
       .then((res) => res.json())
@@ -14,6 +17,17 @@ const Classes = () => {
         setClasses(approvedClasses);
       });
   }, []);
+  //
+  // useEffect(() => {
+  //   fetch("http://localhost:5000/users/admin")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       // setIsAdmin(data);
+  //       const checkAdmin = data.filter((item) => item.role === "admin");
+  //       setIsAdmin(checkAdmin);
+  //     });
+  // }, []);
+  //
   return (
     <div className="approved-class-area container">
       <h3 className="main-heading text-center">Approved Classes</h3>
@@ -30,19 +44,14 @@ const Classes = () => {
                       <span>Instructor: </span> {item.InstructorName}
                     </p>
                     <p>
-                      <span>Instructor Email: </span> {item.email}
-                    </p>
-                    <p>
                       <span>Available seats: </span> {item.availableSeat}
                     </p>
                     <p>
                       <span>Price: </span>
                       {item.price}
                     </p>
-                    <p>
-                      <span>Status: </span>
-                      {item.status}
-                    </p>
+                    <button>Select</button>
+                    {/* <button disabled={isAdmin}>Select</button> */}
                   </Card.Text>
                 </Card.Body>
               </Card>

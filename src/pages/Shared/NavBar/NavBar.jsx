@@ -71,7 +71,6 @@ const NavBar = () => {
               <NavLink to="/instructors">Instructors</NavLink>
               <NavLink to="/classes">Classes</NavLink>
               <NavLink to="/secret">Secret</NavLink>
-              <Darkreader></Darkreader>
             </Nav>
             <Nav>
               {user ? (
@@ -87,12 +86,14 @@ const NavBar = () => {
                       roundedCircle
                     />
                   </NavLink>
-
-                  <button onClick={handleLogout}>Logout</button>
+                  <button onClick={handleLogout} className="logout-btn">
+                    Logout
+                  </button>
                 </>
               ) : (
                 <NavLink to="/login">Login</NavLink>
               )}
+              <Darkreader></Darkreader>
             </Nav>
           </Navbar.Collapse>
         </Container>

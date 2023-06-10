@@ -25,6 +25,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.swiper-wrapper {
+  height: 730px;
+}
 @font-face {
   font-family: "Great Sejagad";
   src: url("../../../../public/Great\ Sejagad.ttf") format("truetype");

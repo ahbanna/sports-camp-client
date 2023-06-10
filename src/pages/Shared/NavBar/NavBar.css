@@ -24,3 +24,6 @@ p.user-name {
   padding: 0 10px;
   color: #fff;
 }
+.logout-btn {
+  margin-right: 10px;
+}
