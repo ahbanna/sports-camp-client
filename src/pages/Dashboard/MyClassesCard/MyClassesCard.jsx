@@ -7,7 +7,7 @@ const MyClassesCard = ({ myClass }) => {
   const { className, classPic, price, status, _id } = myClass;
   return (
     <div className="single-class">
-      <Card style={{ width: "18rem" }}>
+      <Card style={{ width: "23rem" }}>
         <Card.Img variant="top" src={classPic} />
         <Card.Body className="text-center">
           <Card.Title>{className}</Card.Title>
