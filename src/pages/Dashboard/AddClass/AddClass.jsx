@@ -53,7 +53,7 @@ const AddClass = () => {
       {/* TODO: form design */}
       <div className="container">
         <div className="section-title">
-          <h3 className="heading-title">Add A Class</h3>
+          <h3 className="main-heading">Add A Class</h3>
         </div>
         <div>
           <Form onSubmit={handleAddClass}>

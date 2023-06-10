@@ -1,0 +1,17 @@
+.all-approved-class {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.single-approved-class p {
+  margin-bottom: 8px;
+}
+.single-approved-class span {
+  font-weight: 500;
+}
+.single-approved-class .card-title {
+  text-transform: uppercase;
+}
+.single-approved-class img {
+  height: 270px;
+}

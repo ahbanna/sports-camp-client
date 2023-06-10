@@ -15,6 +15,7 @@ import SelectedClasses from "../pages/Dashboard/SelectedClasses/SelectedClasses"
 import EnrolledClasses from "../pages/Dashboard/EnrolledClasses/EnrolledClasses";
 import UpdateClasses from "../pages/Dashboard/UpdateClasses/UpdateClasses";
 import AddClass from "../pages/Dashboard/AddClass/AddClass";
+import Classes from "../pages/Classes/Classes";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "classes",
+        element: <Classes></Classes>,
       },
       {
         path: "login",

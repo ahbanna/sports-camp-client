@@ -71,7 +71,7 @@ const Register = () => {
   return (
     <div className="register-area">
       <div className="container w-50 mx-auto">
-        <h3 className="heading-title">Please Register!</h3>
+        <h3 className="main-heading">Please Register!</h3>
         <Form onSubmit={handleSubmit(onSubmit)}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Name</Form.Label>

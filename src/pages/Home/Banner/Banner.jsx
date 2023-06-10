@@ -46,7 +46,7 @@ const Banner = () => {
             <img src={banner4} alt="" />
           </div>
           <div className="banner-content">
-            <h3 className="heading-title">Welcome</h3>
+            <h3 className="main-heading">Welcome</h3>
             <h2>
               Join the Ultimate <br /> <span>Sports Adventure!</span>
             </h2>
@@ -68,7 +68,7 @@ const Banner = () => {
             <div className="row">
               <div className="col-lg-6">
                 <div className="banner-content">
-                  <h3 className="heading-title">Welcome</h3>
+                  <h3 className="main-heading">Welcome</h3>
                   <h2>
                     Join the Ultimate <br /> <span>Sports Adventure!</span>
                   </h2>

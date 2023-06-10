@@ -9,7 +9,7 @@ const Instructors = () => {
     <div className="instructor-area">
       <div className="container">
         <div className="section-title">
-          <h3 className="heading-title">Our Instructors</h3>
+          <h3 className="main-heading">Our Instructors</h3>
           <p>
             Our qualified instructors are always on hand to inspire, encourage
             and share their passion for the beautiful game.

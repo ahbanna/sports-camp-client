@@ -50,7 +50,7 @@ const Login = () => {
   return (
     <div className="login-area">
       <div className="container w-50 mx-auto">
-        <h3 className="heading-title">Please Login!</h3>
+        <h3 className="main-heading">Please Login!</h3>
         <Form onSubmit={handleSubmit(handleLogin)}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
