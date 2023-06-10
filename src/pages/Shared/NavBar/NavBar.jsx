@@ -47,6 +47,7 @@ import logo from "../../../assets/logo.png";
 import "./NavBar.css";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
+import Darkreader from "react-darkreader";
 
 const NavBar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -60,22 +61,17 @@ const NavBar = () => {
     <div className="header-area">
       <Navbar collapseOnSelect expand="lg" variant="dark">
         <Container>
-          {/* <Navbar.Brand href="/">
-            <Image src={logo} alt="Sports Camp" width="100" height="40" />
-          </Navbar.Brand> */}
           <NavLink to="/">
             <Image src={logo} alt="Sports Camp" width="100" height="40" />
           </NavLink>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
-              {/* <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/instructors">Instructors</Nav.Link>
-              <Nav.Link href="/classes">Classes</Nav.Link> */}
               <NavLink to="/">Home</NavLink>
               <NavLink to="/instructors">Instructors</NavLink>
               <NavLink to="/classes">Classes</NavLink>
               <NavLink to="/secret">Secret</NavLink>
+              <Darkreader></Darkreader>
             </Nav>
             <Nav>
               {user ? (

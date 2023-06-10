@@ -30,3 +30,24 @@
 .sideabar-menu a.active {
   color: #000;
 }
+
+/* Thene toggle */
+:root {
+  /* Light Theme */
+  --bg-color: #f5f5f5;
+  --text-color: #333333;
+
+  /* Dark Theme */
+  --bg-color-dark: #333333;
+  --text-color-dark: #f5f5f5;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+body.dark-theme {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
