@@ -71,6 +71,7 @@ const SelectedClasses = () => {
                   <p>
                     <span>ID</span> {item._id}
                   </p>
+                  {/* TODO: btn design */}
                   <button onClick={() => handleDelete(item._id)}>Delete</button>
                   <button>Pay</button>
                 </Card.Text>
