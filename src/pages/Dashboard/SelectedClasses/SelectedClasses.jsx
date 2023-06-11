@@ -3,6 +3,7 @@ import { Card } from "react-bootstrap";
 import "./SelectedClasses.css";
 import { AuthContext } from "../../../providers/AuthProvider";
 import Swal from "sweetalert2";
+import { Slide } from "react-awesome-reveal";
 
 const SelectedClasses = () => {
   const { user } = useContext(AuthContext);

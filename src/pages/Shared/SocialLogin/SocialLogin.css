@@ -37,3 +37,6 @@
 .google-login button:hover {
   background: #ff4646;
 }
+.google-login {
+  text-align: center;
+}

@@ -3,6 +3,7 @@ import aboutImg from "../../../assets/about.png";
 import aboutImg2 from "../../../assets/about2.png";
 import "./AboutUs.css";
 import { Link } from "react-router-dom";
+import { Slide } from "react-awesome-reveal";
 
 const AboutUs = () => {
   return (
@@ -15,7 +16,10 @@ const AboutUs = () => {
           <div className="row">
             <div className="col-lg-6">
               <div className="about-content">
-                <h2>About Us</h2>
+                <Slide triggerOnce>
+                  <h3 className="main-heading">Know</h3>
+                </Slide>
+                <h2>ABOUT US</h2>
                 <p>
                   Welcome to our summer sports camp! We offer cricket, football,
                   table tennis, baseball, tennis, badminton, boxing, and more.

@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
 import SocialLogin from "../Shared/SocialLogin/SocialLogin";
+import { Slide } from "react-awesome-reveal";
 const Register = () => {
   // TODO reset have to apply
   const { createUser, updateUserProfile } = useContext(AuthContext);
@@ -75,7 +76,10 @@ const Register = () => {
   return (
     <div className="register-area">
       <div className="container w-50 mx-auto">
-        <h3 className="main-heading">Please Register!</h3>
+        <Slide triggerOnce>
+          <h3 className="main-heading">Please Register!</h3>
+        </Slide>
+
         <Form onSubmit={handleSubmit(onSubmit)}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Name</Form.Label>
@@ -147,9 +151,11 @@ const Register = () => {
               </span>
             )}
           </Form.Group>
-          <Button variant="primary" type="submit">
-            Register
-          </Button>
+          <div className="register-btn">
+            <Button variant="primary" type="submit">
+              Register
+            </Button>
+          </div>
           <div>
             <Form.Text>
               Already have an account? <Link to="/login">Login</Link>

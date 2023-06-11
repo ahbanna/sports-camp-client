@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import "./PopularInstructors.css";
+import { Slide } from "react-awesome-reveal";
 
 const PopularInstructors = () => {
   const [popular, setPopular] = useState([]);
@@ -18,7 +19,10 @@ const PopularInstructors = () => {
   return (
     <div className="all-popular-ins-area">
       <div className="section-title">
-        <h3 className="main-heading">Devoted</h3>
+        <Slide triggerOnce>
+          <h3 className="main-heading">Devoted</h3>
+        </Slide>
+
         <h4>Popular Instructors</h4>
       </div>
       <div className="all-popular-ins container">

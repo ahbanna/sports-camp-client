@@ -84,6 +84,8 @@ import React, { useContext, useEffect, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Table } from "react-bootstrap";
 import Swal from "sweetalert2";
+import "./ManageUsers.css";
+import { Slide } from "react-awesome-reveal";
 
 const ManageUsers = () => {
   // for loading all users from the database
@@ -142,9 +144,10 @@ const ManageUsers = () => {
   // }, [users]);
 
   return (
-    <div>
-      <h2>Manage users</h2>
-      <h2>{users.length}</h2>
+    <div className="manage-users-area">
+      <Slide triggerOnce>
+        <h3 className="main-heading text-center">Manage Users</h3>
+      </Slide>
       <Table striped bordered hover>
         <thead>
           <tr>

@@ -15,3 +15,17 @@
 .single-approved-class img {
   height: 270px;
 }
+.single-approved-class button {
+  border: none;
+  background: #fe5000;
+  border: navajowhite;
+  padding: 8px 30px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.single-approved-class button:hover {
+	background: #171c34;
+	border-radius: 5px;
+	transition: .3s;
+}

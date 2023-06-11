@@ -6,6 +6,7 @@ import banner2 from "../../../assets/banner/banner2.png";
 import banner3 from "../../../assets/banner/banner3.jpg";
 import banner4 from "../../../assets/banner/banner4.jpg";
 import banner5 from "../../../assets/banner/banner5.jpg";
+import banner6 from "../../../assets/banner/banner6.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import { Pagination } from "swiper";
 import "swiper/css";
@@ -15,83 +16,76 @@ import { Navigation } from "swiper";
 import "./Banner.css";
 import MyButton from "../../../components/MyButton";
 import bannerBotton from "../../../assets/banner/white_bottom_wave_01.png";
+import { Link } from "react-router-dom";
+import { Fade, Slide } from "react-awesome-reveal";
 
 const Banner = () => {
   return (
     <div className="banner-area">
-      {/* <Carousel>
-        <div>
-          <img src={banner1} />
-          <p className="legend">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero non ut
-            omnis repellat officia maiores illo at nam esse aliquam laboriosam,
-            placeat quas, exercitationem inventore eaque cupiditate perspiciatis
-            natus cumque!
-          </p>
-        </div>
-        <div>
-          <img src={banner2} />
-          <p className="legend">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
-            consectetur quia ratione eos eum beatae quisquam dolore iste
-            consequuntur! Facere reiciendis soluta et eaque illo quasi
-            perspiciatis eius, deleniti deserunt!
-          </p>
-        </div>
-      </Carousel> */}
-
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
           <div className="banner-img">
-            <img src={banner4} alt="" />
+            <img src={banner5} alt="" />
           </div>
           <div className="banner-content">
-            <h3 className="main-heading">Welcome</h3>
-            <h2>
-              Join the Ultimate <br /> <span>Sports Adventure!</span>
-            </h2>
+            <Slide triggerOnce>
+              <h3 className="main-heading">Welcome</h3>
+            </Slide>
+
+            <h2>IN LOVE WITH SPORTS!</h2>
             <p>
               Get active, stay fit, and have a blast with our sports camp
               program.
             </p>
-            {/* <MyButton
-              btnLink={"https://www.google.com/"}
-              btnText={"Hello"}
-            ></MyButton> */}
+            <div className="custom-btn">
+              <button>
+                <Link>JOIN WITH US</Link>
+              </button>
+            </div>
           </div>
           <div className="banner-bottom-bg">
             <img src={bannerBotton} alt="" />
           </div>
         </SwiperSlide>
-        <SwiperSlide style={{ backgroundColor: "#fff3f3" }}>
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-6">
-                <div className="banner-content">
-                  <h3 className="main-heading">Welcome</h3>
-                  <h2>
-                    Join the Ultimate <br /> <span>Sports Adventure!</span>
-                  </h2>
-                  <p>
-                    Get active, stay fit, and have a blast with our sports camp
-                    program.
-                  </p>
-                  {/* <MyButton
-              btnLink={"https://www.google.com/"}
-              btnText={"Hello"}
-            ></MyButton> */}
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="banner-img">
-                  <img src={banner2} alt="" />
-                </div>
-              </div>
+        <SwiperSlide>
+          <div className="banner-img">
+            <img src={banner4} alt="" />
+          </div>
+          <div className="banner-content">
+            <Slide triggerOnce>
+              <h3 className="main-heading">Welcome</h3>
+            </Slide>
+            <h2>BELIEVE & ACHIEVE</h2>
+            <p>Improve skills, make friends, and create lasting memories.</p>
+            <div className="custom-btn">
+              <button>
+                <Link>JOIN WITH US</Link>
+              </button>
             </div>
+          </div>
+          <div className="banner-bottom-bg">
+            <img src={bannerBotton} alt="" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={banner5} alt="" />
+          <div className="banner-img">
+            <img src={banner6} alt="" />
+          </div>
+          <div className="banner-content">
+            <Slide triggerOnce>
+              <h3 className="main-heading">Welcome</h3>
+            </Slide>
+            <h2>ELEVATE YOUR GAME</h2>
+            <p>"Discover the Thrill of Sports With Us</p>
+            <div className="custom-btn">
+              <button>
+                <Link>JOIN WITH US</Link>
+              </button>
+            </div>
+          </div>
+          <div className="banner-bottom-bg">
+            <img src={bannerBotton} alt="" />
+          </div>
         </SwiperSlide>
       </Swiper>
     </div>

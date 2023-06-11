@@ -37,31 +37,33 @@
 
 // export default Instructors;
 
-
-
 import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import { useLoaderData } from "react-router-dom";
 import "./Instructors.css";
+import { Slide } from "react-awesome-reveal";
 
 const Instructors = () => {
-    const [instructors, setInstructors] = useState([]);
+  const [instructors, setInstructors] = useState([]);
 
-    useEffect(() => {
-      fetch("http://localhost:5000/users")
-        .then((res) => res.json())
-        .then((data) => {
-          const popularInstructors = data.filter(
-            (item) => item.role === "instructor"
-          );
-          setInstructors(popularInstructors);
-        });
-    }, []);
+  useEffect(() => {
+    fetch("http://localhost:5000/users")
+      .then((res) => res.json())
+      .then((data) => {
+        const popularInstructors = data.filter(
+          (item) => item.role === "instructor"
+        );
+        setInstructors(popularInstructors);
+      });
+  }, []);
   return (
     <div className="instructor-area">
       <div className="container">
         <div className="section-title">
-          <h3 className="main-heading">Our Instructors</h3>
+          <Slide triggerOnce>
+            <h3 className="main-heading">Our Instructors</h3>
+          </Slide>
+
           <p>
             Our qualified instructors are always on hand to inspire, encourage
             and share their passion for the beautiful game.

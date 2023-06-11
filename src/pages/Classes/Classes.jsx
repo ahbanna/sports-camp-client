@@ -5,6 +5,7 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../providers/AuthProvider";
 import { Link } from "react-router-dom";
+import { Slide } from "react-awesome-reveal";
 
 const Classes = () => {
   const [classes, setClasses] = useState([]);
@@ -50,7 +51,10 @@ const Classes = () => {
 
   return (
     <div className="approved-class-area container">
-      <h3 className="main-heading text-center">Approved Classes</h3>
+      <Slide triggerOnce>
+        <h3 className="main-heading text-center">Approved Classes</h3>
+      </Slide>
+
       <div className="all-approved-class">
         {classes.map((item) => (
           <div className="single-approved-class">

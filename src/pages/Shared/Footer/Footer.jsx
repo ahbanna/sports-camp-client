@@ -22,10 +22,10 @@ const Footer = () => {
             <div className="col-lg-3">
               <h3>About Sports Camp</h3>
               <p>
-                We believe that education can be fun, engaging, and exciting.
-                Our mission is to provide a wide range of high-quality
-                educational toys that not only entertain but also inspire young
-                minds.
+                Enhance skills, teamwork & sportsmanship! Join a program led by
+                professionals, where young athletes can immerse themselves in
+                training, competitions, fostering personal growth and a love for
+                sports.
               </p>
             </div>
             <div className="col-lg-3">

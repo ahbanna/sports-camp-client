@@ -7,6 +7,7 @@ import { useForm } from "react-hook-form";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
 import SocialLogin from "../Shared/SocialLogin/SocialLogin";
+import { Slide } from "react-awesome-reveal";
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
@@ -50,7 +51,10 @@ const Login = () => {
   return (
     <div className="login-area">
       <div className="container w-50 mx-auto">
-        <h3 className="main-heading">Please Login!</h3>
+        <Slide triggerOnce>
+          <h3 className="main-heading">Please Login!</h3>
+        </Slide>
+
         <Form onSubmit={handleSubmit(handleLogin)}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
@@ -69,9 +73,11 @@ const Login = () => {
               {...register("password", { required: true })}
             />
           </Form.Group>
-          <Button variant="primary" type="submit">
-            Login
-          </Button>
+          <div className="login-btn">
+            <Button variant="primary" type="submit">
+              Login
+            </Button>
+          </div>
           <div>
             <Form.Text>
               Don't have an account? <Link to="/register">Register</Link>
@@ -80,12 +86,6 @@ const Login = () => {
             <p className="error-msg"></p>
           </div>
         </Form>
-        {/* <div className="google-login">
-          <h4>OR</h4>
-          <Button onClick="">
-            <FaGoogle></FaGoogle> Login With Google
-          </Button>
-        </div> */}
         <SocialLogin></SocialLogin>
       </div>
     </div>
