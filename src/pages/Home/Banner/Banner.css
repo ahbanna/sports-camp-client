@@ -30,7 +30,8 @@
 }
 @font-face {
   font-family: "Great Sejagad";
-  src: url("../../../../public/Great\ Sejagad.ttf") format("truetype");
+  /* src: url("../../../../public/Great\ Sejagad.ttf") format("truetype"); */
+  src: url("../../../../Great\ Sejagad.ttf") format("truetype");
 }
 .main-heading {
   font-family: "Great Sejagad";

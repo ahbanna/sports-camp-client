@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import "./Classes.css";
+import axios from "axios";
+import Swal from "sweetalert2";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Classes = () => {
   const [classes, setClasses] = useState([]);
-  //
-  // const [isAdmin, setIsAdmin] = useState(false);
-  //
+  const { user } = useContext(AuthContext);
+  // console.log(user.email);
+
   useEffect(() => {
     fetch("http://localhost:5000/allclasses")
       .then((res) => res.json())
@@ -17,17 +20,33 @@ const Classes = () => {
         setClasses(approvedClasses);
       });
   }, []);
-  //
-  // useEffect(() => {
-  //   fetch("http://localhost:5000/users/admin")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       // setIsAdmin(data);
-  //       const checkAdmin = data.filter((item) => item.role === "admin");
-  //       setIsAdmin(checkAdmin);
-  //     });
-  // }, []);
-  //
+
+  const handleSelect = (selectedClass) => {
+    const dataToSend = {
+      ...selectedClass,
+      userEmail: user.email,
+    };
+
+    axios
+      .post("http://localhost:5000/selectedclasses", dataToSend)
+      .then((res) => {
+        console.log(res.data);
+        if (res.data.insertedId) {
+          // sweet alert starts
+          Swal.fire({
+            title: "Selected successfully",
+            icon: "success",
+          });
+          navigate("/");
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
+  // POST api for select class as a student end
+
   return (
     <div className="approved-class-area container">
       <h3 className="main-heading text-center">Approved Classes</h3>
@@ -50,7 +69,7 @@ const Classes = () => {
                       <span>Price: </span>
                       {item.price}
                     </p>
-                    <button>Select</button>
+                    <button onClick={() => handleSelect(item)}>Select</button>
                     {/* <button disabled={isAdmin}>Select</button> */}
                   </Card.Text>
                 </Card.Body>
