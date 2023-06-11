@@ -4,6 +4,7 @@ import "./Classes.css";
 import axios from "axios";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../providers/AuthProvider";
+import { Link } from "react-router-dom";
 
 const Classes = () => {
   const [classes, setClasses] = useState([]);
@@ -69,9 +70,11 @@ const Classes = () => {
                       <span>Price: </span>
                       {item.price}
                     </p>
-                    <button onClick={() => handleSelect(item)} item={item}>
-                      Select
-                    </button>
+                    <Link to="/dashboard/selectedclasses">
+                      <button onClick={() => handleSelect(item)} item={item}>
+                        Select
+                      </button>
+                    </Link>
                     {/* <button disabled={isAdmin}>Select</button> */}
                   </Card.Text>
                 </Card.Body>
