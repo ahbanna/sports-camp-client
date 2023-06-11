@@ -1,9 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
-import useAxiosSecure from "../../../hooks/useAxiosSecure";
-import { useQuery } from "@tanstack/react-query";
 import { Card } from "react-bootstrap";
 import "./SelectedClasses.css";
 import { AuthContext } from "../../../providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const SelectedClasses = () => {
   const { user } = useContext(AuthContext);
@@ -13,10 +12,41 @@ const SelectedClasses = () => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         setSelectedclass(data);
       });
   }, []);
+
+  const handleDelete = (_id) => {
+    console.log(_id);
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        fetch(`http://localhost:5000/selectedclasses/${_id}`, {
+          method: "DELETE",
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            if (data.deletedCount > 0) {
+              Swal.fire("Deleted!", "Your Class has been deleted.", "success");
+              const remaining = selectedclass.filter(
+                (myClass) => myClass._id !== _id
+              );
+              setSelectedclass(remaining);
+            }
+          });
+      }
+    });
+  };
+  // delete end
 
   return (
     <div className="selected-class-area">
@@ -38,7 +68,10 @@ const SelectedClasses = () => {
                     <span>Price: </span>
                     {item.price}
                   </p>
-                  <button>Delete</button>
+                  <p>
+                    <span>ID</span> {item._id}
+                  </p>
+                  <button onClick={() => handleDelete(item._id)}>Delete</button>
                   <button>Pay</button>
                 </Card.Text>
               </Card.Body>

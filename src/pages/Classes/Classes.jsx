@@ -69,7 +69,9 @@ const Classes = () => {
                       <span>Price: </span>
                       {item.price}
                     </p>
-                    <button onClick={() => handleSelect(item)}>Select</button>
+                    <button onClick={() => handleSelect(item)} item={item}>
+                      Select
+                    </button>
                     {/* <button disabled={isAdmin}>Select</button> */}
                   </Card.Text>
                 </Card.Body>
