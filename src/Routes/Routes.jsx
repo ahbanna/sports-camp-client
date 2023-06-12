@@ -15,6 +15,7 @@ import EnrolledClasses from "../pages/Dashboard/EnrolledClasses/EnrolledClasses"
 import UpdateClasses from "../pages/Dashboard/UpdateClasses/UpdateClasses";
 import AddClass from "../pages/Dashboard/AddClass/AddClass";
 import Classes from "../pages/Classes/Classes";
+// import Payment from "../pages/Dashboard/Payment/Payment";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -39,7 +40,7 @@ export const router = createBrowserRouter([
       {
         path: "Instructors",
         element: <Instructors></Instructors>,
-        // loader: () => fetch("http://localhost:5000/Instructors"),
+        // loader: () => fetch("https://sports-camp-server.vercel.app/Instructors"),
       },
     ],
   },
@@ -71,7 +72,7 @@ export const router = createBrowserRouter([
         path: "myclasses/:id",
         element: <UpdateClasses></UpdateClasses>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/myclasses/${params.id}`),
+          fetch(`https://sports-camp-server.vercel.app/myclasses/${params.id}`),
       },
       {
         path: "selectedclasses",
@@ -85,6 +86,10 @@ export const router = createBrowserRouter([
         path: "enrolledclesses",
         element: <EnrolledClasses></EnrolledClasses>,
       },
+      // {
+      //   path: "payment",
+      //   element: <Payment></Payment>,
+      // },
     ],
   },
   {

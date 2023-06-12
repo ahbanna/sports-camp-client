@@ -9,14 +9,14 @@
 
 //   // for laod all users from database starts
 //   const { data: users = [], refetch } = useQuery(["users"], async () => {
-//     const res = await fetch("http://localhost:5000/users");
+//     const res = await fetch("https://sports-camp-server.vercel.app/users");
 //     return res.json();
 //   });
 //   // for laod all users from database end
 
 //   // Make user as admin starts
 //   const handleMakeAdmin = (user) => {
-//     fetch(`http://localhost:5000/users/admin/${user._id}`, {
+//     fetch(`https://sports-camp-server.vercel.app/users/admin/${user._id}`, {
 //       method: "PATCH",
 //     })
 //       .then((res) => res.json())
@@ -90,13 +90,13 @@ import { Slide } from "react-awesome-reveal";
 const ManageUsers = () => {
   // for loading all users from the database
   const { data: users = [], refetch } = useQuery(["users"], async () => {
-    const res = await fetch("http://localhost:5000/users");
+    const res = await fetch("https://sports-camp-server.vercel.app/users");
     return res.json();
   });
 
   // Make user as admin or instructor
   const handleMakeRole = (user, role) => {
-    fetch(`http://localhost:5000/users/${role}/${user._id}`, {
+    fetch(`https://sports-camp-server.vercel.app/users/${role}/${user._id}`, {
       method: "PATCH",
     })
       .then((res) => res.json())
@@ -117,7 +117,7 @@ const ManageUsers = () => {
   // // Function to set the default role for new users
   // const setDefaultRole = (user) => {
   //   if (!user.role) {
-  //     fetch(`http://localhost:5000/users/default-role/${user._id}`, {
+  //     fetch(`https://sports-camp-server.vercel.app/users/default-role/${user._id}`, {
   //       method: "PATCH",
   //     })
   //       .then((res) => res.json())

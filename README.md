@@ -9,7 +9,7 @@
 - Home page contains a slider section, popular class section contain six most
   popular classess based on the number of enrolled students, popular Instructors
   section based on the number of enrolled students and a about us section.
-- header and Footer are shown expect 404 page.
+- Header and Footer are shown expect 404 page.
 - Instructor page shows all the Instructors and classess page shows all the
   classess approved by the admin. A student can select class and it will be
   shown his/her dashboard. After that, he/she can pay for the class.
@@ -24,4 +24,4 @@
 
 # Project Live Link
 
-https://edu-kids-e7e02.web.app/
+https://summer-camp-208e3.web.app/

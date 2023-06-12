@@ -29,7 +29,7 @@ const AddClass = () => {
     console.log(newClass);
 
     // send data to server starts
-    fetch("http://localhost:5000/allclasses", {
+    fetch("https://sports-camp-server.vercel.app/allclasses", {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -13,7 +13,7 @@ const Classes = () => {
   // console.log(user.email);
 
   useEffect(() => {
-    fetch("http://localhost:5000/allclasses")
+    fetch("https://sports-camp-server.vercel.app/allclasses")
       .then((res) => res.json())
       .then((data) => {
         const approvedClasses = data.filter(
@@ -30,7 +30,7 @@ const Classes = () => {
     };
 
     axios
-      .post("http://localhost:5000/selectedclasses", dataToSend)
+      .post("https://sports-camp-server.vercel.app/selectedclasses", dataToSend)
       .then((res) => {
         console.log(res.data);
         if (res.data.insertedId) {
@@ -74,12 +74,12 @@ const Classes = () => {
                       <span>Price: </span>
                       {item.price}
                     </p>
-                    <Link to="/dashboard/selectedclasses">
+                    {/* <Link to="/dashboard/selectedclasses">
                       <button onClick={() => handleSelect(item)} item={item}>
                         Select
                       </button>
-                    </Link>
-                    {/* <button disabled={isAdmin}>Select</button> */}
+                    </Link> */}
+                    <button onClick={() => handleSelect(item)}>Select</button>
                   </Card.Text>
                 </Card.Body>
               </Card>

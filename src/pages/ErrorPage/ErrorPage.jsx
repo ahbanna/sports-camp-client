@@ -13,10 +13,11 @@ const ErrorPage = () => {
         </div>
         <div className="error-text">
           <h3>Page Not Found</h3>
-          {/* TODO: button design */}
-          <button>
-            <Link to="/">Go To Home</Link>
-          </button>
+          <div className="custom-btn">
+            <button>
+              <Link to="/">Go To Home</Link>
+            </button>
+          </div>
         </div>
       </div>
     </div>

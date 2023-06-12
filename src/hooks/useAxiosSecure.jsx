@@ -12,7 +12,7 @@ const useAxiosSecure = () => {
   const navigate = useNavigate();
 
   const axiosSecure = axios.create({
-    baseURL: "http://localhost:5000",
+    baseURL: "https://sports-camp-server.vercel.app",
   });
 
   useEffect(() => {

@@ -4,11 +4,12 @@ import "./SelectedClasses.css";
 import { AuthContext } from "../../../providers/AuthProvider";
 import Swal from "sweetalert2";
 import { Slide } from "react-awesome-reveal";
+import { Link } from "react-router-dom";
 
 const SelectedClasses = () => {
   const { user } = useContext(AuthContext);
   const [selectedclass, setSelectedclass] = useState([]);
-  const url = `http://localhost:5000/selectedclasses?userEmail=${user?.email}`;
+  const url = `https://sports-camp-server.vercel.app/selectedclasses?userEmail=${user?.email}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -30,7 +31,7 @@ const SelectedClasses = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/selectedclasses/${_id}`, {
+        fetch(`https://sports-camp-server.vercel.app/selectedclasses/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -78,11 +79,12 @@ const SelectedClasses = () => {
                     <p>
                       <span>ID</span> {item._id}
                     </p>
-                    {/* TODO: btn design */}
                     <button onClick={() => handleDelete(item._id)}>
                       Delete
                     </button>
-                    <button>Pay</button>
+                    <Link to="/dashboard/payment">
+                      <button>Pay</button>
+                    </Link>
                   </Card.Text>
                 </Card.Body>
               </Card>

@@ -22,7 +22,7 @@
 .banner-content span {
   background: #ffffff;
   background: linear-gradient(to top left, #ffffff 0%, #fe5000 60%);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
 }
 .swiper-wrapper {
