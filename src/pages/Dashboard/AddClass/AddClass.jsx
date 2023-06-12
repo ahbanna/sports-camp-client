@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import { Button, Form } from "react-bootstrap";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../../providers/AuthProvider";
+import "./AddClass.css";
+import { Slide } from "react-awesome-reveal";
 
 const AddClass = () => {
   const { user } = useContext(AuthContext);
@@ -49,80 +51,86 @@ const AddClass = () => {
     // send data to server end
   };
   return (
-    <div>
+    <div className="add-class-area">
       {/* TODO: form design */}
       <div className="container">
-        <div className="section-title">
-          <h3 className="main-heading">Add A Class</h3>
-        </div>
+        <Slide triggerOnce>
+          <div className="section-title text-center">
+            <h3 className="main-heading">Add A Class</h3>
+          </div>
+        </Slide>
         <div>
           <Form onSubmit={handleAddClass}>
             <div className="form-area">
-              <div>
-                <Form.Group className="mb-3" controlId="className">
-                  <Form.Label>Class Name</Form.Label>
-                  <Form.Control
-                    type="text"
-                    name="className"
-                    placeholder="Enter class name"
-                  />
-                </Form.Group>
+              <div className="d-flex">
+                <div className="w-100 mx-4">
+                  <Form.Group className="mb-3" controlId="className">
+                    <Form.Label>Class Name</Form.Label>
+                    <Form.Control
+                      type="text"
+                      name="className"
+                      placeholder="Enter class name"
+                    />
+                  </Form.Group>
+                </div>
+                <div className="w-100">
+                  <Form.Group className="mb-3" controlId="classPic">
+                    <Form.Label>Class Picture URL</Form.Label>
+                    <Form.Control
+                      type="text"
+                      name="classPic"
+                      placeholder="Enter class image url"
+                    />
+                  </Form.Group>
+                </div>
+              </div>
+              <div className="d-flex">
+                <div className="w-100 mx-4">
+                  <Form.Group className="mb-3" controlId="InstructorName">
+                    <Form.Label>Instructor Name</Form.Label>
+                    <Form.Control
+                      type="text"
+                      name="InstructorName"
+                      placeholder="Instructor name"
+                      defaultValue={user.displayName}
+                    />
+                  </Form.Group>
+                </div>
+
+                <div className="w-100">
+                  <Form.Group className="mb-3" controlId="email">
+                    <Form.Label>Instructor Email</Form.Label>
+                    <Form.Control
+                      type="email"
+                      name="email"
+                      placeholder="Seller Email"
+                      defaultValue={user.email}
+                    />
+                  </Form.Group>
+                </div>
               </div>
 
-              <div>
-                <Form.Group className="mb-3" controlId="classPic">
-                  <Form.Label>Class Picture URL</Form.Label>
-                  <Form.Control
-                    type="text"
-                    name="classPic"
-                    placeholder="Enter class image url"
-                  />
-                </Form.Group>
-              </div>
-
-              <div>
-                <Form.Group className="mb-3" controlId="InstructorName">
-                  <Form.Label>Instructor Name</Form.Label>
-                  <Form.Control
-                    type="text"
-                    name="InstructorName"
-                    placeholder="Instructor name"
-                    defaultValue={user.displayName}
-                  />
-                </Form.Group>
-              </div>
-
-              <div>
-                <Form.Group className="mb-3" controlId="email">
-                  <Form.Label>Instructor Email</Form.Label>
-                  <Form.Control
-                    type="email"
-                    name="email"
-                    placeholder="Seller Email"
-                    defaultValue={user.email}
-                  />
-                </Form.Group>
-              </div>
-
-              <div>
-                <Form.Group className="mb-3" controlId="availableSeat">
-                  <Form.Label>Available seat</Form.Label>
-                  <Form.Control
-                    type="number"
-                    name="availableSeat"
-                    placeholder="available seat"
-                  />
-                </Form.Group>
-              </div>
-              <div>
-                <Form.Group className="mb-3" controlId="price">
-                  <Form.Label>Price</Form.Label>
-                  <Form.Control
-                    type="number"
-                    name="price"
-                    placeholder="Price"
-                  />
-                </Form.Group>
+              <div className="d-flex">
+                <div className="w-100 mx-4">
+                  <Form.Group className="mb-3" controlId="availableSeat">
+                    <Form.Label>Available seat</Form.Label>
+                    <Form.Control
+                      type="number"
+                      name="availableSeat"
+                      placeholder="available seat"
+                    />
+                  </Form.Group>
+                </div>
+                <div className="w-100">
+                  <Form.Group className="mb-3" controlId="price">
+                    <Form.Label>Price</Form.Label>
+                    <Form.Control
+                      type="number"
+                      name="price"
+                      placeholder="Price"
+                    />
+                  </Form.Group>
+                </div>
               </div>
             </div>
             <div className="add-class-submit-btn">

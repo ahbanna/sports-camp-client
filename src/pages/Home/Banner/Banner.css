@@ -47,3 +47,14 @@
   position: absolute;
   bottom: 0;
 }
+@media only screen and (max-width: 576px) {
+  .main-heading {
+    font-size: 60px;
+  }
+  .banner-content h2 {
+    font-size: 30px;
+  }
+  .custom-btn button {
+    width: 130px;
+  }
+}

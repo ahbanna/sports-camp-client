@@ -1,0 +1,20 @@
+.add-class-submit-btn {
+  text-align: center;
+}
+.add-class-submit-btn button {
+  background: #fe5000;
+  border: navajowhite;
+  padding: 8px 30px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+  border-radius: 0;
+}
+.add-class-submit-btn button:hover {
+  background: #171c34;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.form-area label {
+  font-weight: 600;
+}

@@ -15,3 +15,16 @@
 .single-selected-class img {
   height: 270px;
 }
+.selected-class-area button {
+  background: #fe5000;
+  border: navajowhite;
+  padding: 8px 30px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+.selected-class-area button:hover {
+  background: #171c34;
+  transition: 0.3s;
+}

@@ -6,17 +6,7 @@
   font-size: 22px;
   font-weight: 700;
   color: #fe5000;
-  position: relative;
-  padding-bottom: 20px;
-}
-.footer-container h3::before {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 60px;
-  height: 1px;
-  content: "";
-  background: #804bff;
+  padding-bottom: 5px;
 }
 .footer-container p {
   color: #fff;
@@ -25,6 +15,9 @@
 }
 .footer-contact li {
   opacity: 0.6;
+}
+.quick-links-area {
+  padding-left: 80px;
 }
 .social-link h4 {
   color: #fff;
@@ -48,7 +41,6 @@
 .social-icon li a {
   color: #fff;
   opacity: 0.6;
-  /* font-size: 16px; */
 }
 .footer-area ul {
   list-style: none;
@@ -64,6 +56,20 @@
   opacity: 1;
   transition: 0.3s;
 }
+.subscribe-btn.custom-btn button::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 50%;
+  width: 33.33%;
+  background-color: #fe5000;
+  transition: width 0.3s;
+  z-index: -1;
+}
+.subscribe-btn.custom-btn input {
+  border: none;
+}
 .footer-subscribe form input {
   height: 45px;
   width: 100%;
@@ -75,13 +81,8 @@
   border-bottom: 1px solid #9597a2;
   outline: none;
 }
-.footer-subscribe form .submit-btn input {
-  width: 50%;
-  background: #ff4646;
-  margin-top: -10px;
-}
 .copyright {
-  border-top: 1px solid #804bff;
+  border-top: 2px solid #fe5000;
 }
 .copyright p {
   text-align: center;
@@ -96,5 +97,17 @@
 @media only screen and (max-width: 576px) {
   .footer-contact {
     padding-left: 0;
+  }
+  .footer-area {
+    text-align: center;
+  }
+  .social-link ul {
+    justify-content: center;
+  }
+  .quick-links-area {
+    padding-left: 0px;
+  }
+  .footer-subscribe form input {
+    width: 65%;
   }
 }

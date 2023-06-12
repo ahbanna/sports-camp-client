@@ -70,7 +70,6 @@ const NavBar = () => {
               <NavLink to="/">Home</NavLink>
               <NavLink to="/instructors">Instructors</NavLink>
               <NavLink to="/classes">Classes</NavLink>
-              <NavLink to="/secret">Secret</NavLink>
             </Nav>
             <Nav>
               {user ? (

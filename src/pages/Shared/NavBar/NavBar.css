@@ -27,3 +27,9 @@ p.user-name {
 .logout-btn {
   margin-right: 10px;
 }
+.navbar-nav button {
+  border: none;
+  background: #fe5000;
+  color: #fff;
+  font-weight: 600;
+}

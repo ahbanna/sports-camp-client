@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
 import MyClassesCard from "../MyClassesCard/MyClassesCard";
 import "./MyClasses.css";
+import { Slide } from "react-awesome-reveal";
 
 const MyClasses = () => {
   const { user } = useContext(AuthContext);
@@ -17,6 +18,11 @@ const MyClasses = () => {
   }, []);
   return (
     <div>
+      <Slide triggerOnce>
+        <div className="section-title text-center">
+          <h3 className="main-heading">My Classes</h3>
+        </div>
+      </Slide>
       <div className="all-classes">
         {myClasses.map((myClass) => (
           <MyClassesCard key={myClass._id} myClass={myClass}></MyClassesCard>

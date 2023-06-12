@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaDribbble,
   FaGoogle,
+  FaFacebookF,
 } from "react-icons/fa";
 import "./Footer.css";
 import footerBg from "../../../assets/footer-bg.png";
@@ -28,7 +29,7 @@ const Footer = () => {
                 sports.
               </p>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 quick-links-area">
               <div className="quick-links">
                 <h3>Quick Links</h3>
                 <ul>
@@ -50,13 +51,13 @@ const Footer = () => {
                 <h4>Follow us :</h4>
                 <ul className="social-icon">
                   <li>
-                    <a href="https://twitter.com/home">
-                      <FaTwitter></FaTwitter>
+                    <a href="https://facebook.com/home">
+                      <FaFacebookF></FaFacebookF>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.behance.net/">
-                      <FaBehance></FaBehance>
+                    <a href="https://twitter.com/home">
+                      <FaTwitter></FaTwitter>
                     </a>
                   </li>
                   <li>
@@ -65,13 +66,8 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="https://dribbble.com/">
-                      <FaDribbble></FaDribbble>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.google.com/account/about/">
-                      <FaGoogle></FaGoogle>
+                    <a href="https://www.behance.net/">
+                      <FaBehance></FaBehance>
                     </a>
                   </li>
                 </ul>
@@ -92,9 +88,7 @@ const Footer = () => {
             </div>
             <div className="col-lg-3 footer-subscribe">
               <h3>Newsletter</h3>
-              <p>
-                Enter your email and get latest updates and offers subscribe us
-              </p>
+              <p>Enter your email and get latest updates</p>
               <form action="">
                 <input
                   type="text"
@@ -102,8 +96,10 @@ const Footer = () => {
                   id=""
                   placeholder="Enter Your Email"
                 />
-                <div className="submit-btn">
-                  <input type="submit" value="Subscribe Now" />
+                <div className="subscribe-btn custom-btn">
+                  <button>
+                    <input type="submit" value="Subscribe Now" />
+                  </button>
                 </div>
               </form>
             </div>
