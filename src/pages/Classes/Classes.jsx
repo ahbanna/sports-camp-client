@@ -30,7 +30,7 @@ const Classes = () => {
     };
 
     axios
-      .post("https://sports-camp-server.vercel.app/allclasses", dataToSend)
+      .post("https://sports-camp-server.vercel.app/selectedclasses", dataToSend)
       .then((res) => {
         console.log(res.data);
         if (res.data.insertedId) {
