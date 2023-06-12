@@ -30,7 +30,7 @@ const Classes = () => {
     };
 
     axios
-      .post("https://sports-camp-server.vercel.app/selectedclasses", dataToSend)
+      .post("https://sports-camp-server.vercel.app/allclasses", dataToSend)
       .then((res) => {
         console.log(res.data);
         if (res.data.insertedId) {
@@ -74,12 +74,13 @@ const Classes = () => {
                       <span>Price: </span>
                       {item.price}
                     </p>
+                    <button onClick={() => handleSelect(item)}>Select</button>
+
                     {/* <Link to="/dashboard/selectedclasses">
                       <button onClick={() => handleSelect(item)} item={item}>
                         Select
                       </button>
                     </Link> */}
-                    <button onClick={() => handleSelect(item)}>Select</button>
                   </Card.Text>
                 </Card.Body>
               </Card>
