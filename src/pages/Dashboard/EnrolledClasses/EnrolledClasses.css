@@ -1,0 +1,20 @@
+.enrolled-class-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.single-enrolled-class p {
+  margin-bottom: 8px;
+}
+.single-enrolled-classs p {
+  font-weight: 500;
+}
+.single-enrolled-class .card-title {
+  text-transform: uppercase;
+}
+.single-enrolled-class img {
+  height: 270px;
+}
+.single-enrolled-class span {
+  font-weight: 600;
+}

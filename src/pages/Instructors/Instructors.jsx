@@ -42,12 +42,14 @@ import { Card } from "react-bootstrap";
 import { useLoaderData } from "react-router-dom";
 import "./Instructors.css";
 import { Slide } from "react-awesome-reveal";
+import useTitle from "../../hooks/useTitle";
 
 const Instructors = () => {
+  useTitle("All Instructors");
   const [instructors, setInstructors] = useState([]);
 
   useEffect(() => {
-    fetch("https://sports-camp-server.vercel.app/users")
+    fetch("https://uppity-ants-production.up.railway.app/users")
       .then((res) => res.json())
       .then((data) => {
         const popularInstructors = data.filter(

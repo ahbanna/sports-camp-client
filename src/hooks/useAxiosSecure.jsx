@@ -5,15 +5,19 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 // import useAuth from "./useAuth";
 
+const axiosSecure = axios.create({
+  baseURL: "https://uppity-ants-production.up.railway.app",
+});
+
 const useAxiosSecure = () => {
   // const { logOut } = useAuth();
   const { logOut } = useContext(AuthContext);
   // const { logOut } = useAuth();
   const navigate = useNavigate();
 
-  const axiosSecure = axios.create({
-    baseURL: "https://sports-camp-server.vercel.app",
-  });
+  // const axiosSecure = axios.create({
+  //   baseURL: "https://uppity-ants-production.up.railway.app",
+  // });
 
   useEffect(() => {
     // 1. intercept requset client to server

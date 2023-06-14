@@ -3,6 +3,7 @@ import useTitle from "../../../hooks/useTitle";
 import Banner from "../Banner/Banner";
 import AboutUs from "../AboutUs/AboutUs";
 import PopularInstructors from "../PopularInstructors/PopularInstructors";
+import PopularClasses from "../PopularClasses/PopularClasses";
 
 const Home = () => {
   useTitle("Home");
@@ -10,6 +11,7 @@ const Home = () => {
     <div>
       <Banner></Banner>
       <PopularInstructors></PopularInstructors>
+      <PopularClasses></PopularClasses>
       <AboutUs></AboutUs>
     </div>
   );

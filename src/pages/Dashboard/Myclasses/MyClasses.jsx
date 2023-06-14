@@ -3,11 +3,13 @@ import { AuthContext } from "../../../providers/AuthProvider";
 import MyClassesCard from "../MyClassesCard/MyClassesCard";
 import "./MyClasses.css";
 import { Slide } from "react-awesome-reveal";
+import useTitle from "../../../hooks/useTitle";
 
 const MyClasses = () => {
+  useTitle("My Classes");
   const { user } = useContext(AuthContext);
   const [myClasses, setMyClasses] = useState([]);
-  const url = `https://sports-camp-server.vercel.app/myclasses?email=${user?.email}`;
+  const url = `https://uppity-ants-production.up.railway.app/myclasses?email=${user?.email}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())

@@ -56,7 +56,7 @@ const SocialLogin = () => {
         name: loggedInUser.displayName,
         email: loggedInUser.email,
       };
-      fetch("https://sports-camp-server.vercel.app/users", {
+      fetch("https://uppity-ants-production.up.railway.app/users", {
         method: "POST",
         headers: {
           "content-type": "application/json",

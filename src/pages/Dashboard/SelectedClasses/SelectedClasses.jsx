@@ -4,12 +4,17 @@ import "./SelectedClasses.css";
 import { AuthContext } from "../../../providers/AuthProvider";
 import Swal from "sweetalert2";
 import { Slide } from "react-awesome-reveal";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import useTitle from "../../../hooks/useTitle";
 
 const SelectedClasses = () => {
+  useTitle("Selected Classes");
   const { user } = useContext(AuthContext);
+  //payment start
+  const navigate = useNavigate();
+  // payment end
   const [selectedclass, setSelectedclass] = useState([]);
-  const url = `https://sports-camp-server.vercel.app/selectedclasses?userEmail=${user?.email}`;
+  const url = `https://uppity-ants-production.up.railway.app/selectedclasses?userEmail=${user?.email}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -19,6 +24,7 @@ const SelectedClasses = () => {
       });
   }, []);
 
+  // delete start
   const handleDelete = (_id) => {
     console.log(_id);
     Swal.fire({
@@ -31,9 +37,12 @@ const SelectedClasses = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://sports-camp-server.vercel.app/selectedclasses/${_id}`, {
-          method: "DELETE",
-        })
+        fetch(
+          `https://uppity-ants-production.up.railway.app/selectedclasses/${_id}`,
+          {
+            method: "DELETE",
+          }
+        )
           .then((res) => res.json())
           .then((data) => {
             console.log(data);
@@ -76,13 +85,23 @@ const SelectedClasses = () => {
                       <span>Price: </span>
                       {item.price}
                     </p>
-                    <p>
-                      <span>ID</span> {item._id}
-                    </p>
                     <button onClick={() => handleDelete(item._id)}>
                       Delete
                     </button>
-                    <Link to="/dashboard/payment">
+                    <Link
+                      to="/dashboard/payment"
+                      state={{
+                        price: item.price,
+                        instructorName: item.InstructorName,
+                        email: item.email,
+                        userEmail: item.userEmail,
+                        className: item.className,
+                        classPic: item.classPic,
+                        availableSeat: item.availableSeat,
+                        classId: item._id,
+                      }}
+                      onClick={() => navigate("/dashboard/payment")}
+                    >
                       <button>Pay</button>
                     </Link>
                   </Card.Text>

@@ -15,7 +15,8 @@ import EnrolledClasses from "../pages/Dashboard/EnrolledClasses/EnrolledClasses"
 import UpdateClasses from "../pages/Dashboard/UpdateClasses/UpdateClasses";
 import AddClass from "../pages/Dashboard/AddClass/AddClass";
 import Classes from "../pages/Classes/Classes";
-// import Payment from "../pages/Dashboard/Payment/Payment";
+import Payment from "../pages/Dashboard/Payment/Payment";
+import PaymentHistory from "../pages/Dashboard/PaymentHistory/PaymentHistory";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -40,7 +41,7 @@ export const router = createBrowserRouter([
       {
         path: "Instructors",
         element: <Instructors></Instructors>,
-        // loader: () => fetch("https://sports-camp-server.vercel.app/Instructors"),
+        // loader: () => fetch("https://uppity-ants-production.up.railway.app/Instructors"),
       },
     ],
   },
@@ -72,7 +73,9 @@ export const router = createBrowserRouter([
         path: "myclasses/:id",
         element: <UpdateClasses></UpdateClasses>,
         loader: ({ params }) =>
-          fetch(`https://sports-camp-server.vercel.app/myclasses/${params.id}`),
+          fetch(
+            `https://uppity-ants-production.up.railway.app/myclasses/${params.id}`
+          ),
       },
       {
         path: "selectedclasses",
@@ -86,10 +89,14 @@ export const router = createBrowserRouter([
         path: "enrolledclesses",
         element: <EnrolledClasses></EnrolledClasses>,
       },
-      // {
-      //   path: "payment",
-      //   element: <Payment></Payment>,
-      // },
+      {
+        path: "payment",
+        element: <Payment></Payment>,
+      },
+      {
+        path: "paymenthistory",
+        element: <PaymentHistory></PaymentHistory>,
+      },
     ],
   },
   {

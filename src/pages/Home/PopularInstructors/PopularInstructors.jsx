@@ -7,7 +7,7 @@ const PopularInstructors = () => {
   const [popular, setPopular] = useState([]);
 
   useEffect(() => {
-    fetch("https://sports-camp-server.vercel.app/users")
+    fetch("https://uppity-ants-production.up.railway.app/users")
       .then((res) => res.json())
       .then((data) => {
         const popularInstructors = data.filter(

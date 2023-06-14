@@ -4,8 +4,10 @@ import Swal from "sweetalert2";
 import { AuthContext } from "../../../providers/AuthProvider";
 import "./AddClass.css";
 import { Slide } from "react-awesome-reveal";
+import useTitle from "../../../hooks/useTitle";
 
 const AddClass = () => {
+  useTitle("Add Class");
   const { user } = useContext(AuthContext);
   const handleAddClass = (event) => {
     event.preventDefault();
@@ -29,7 +31,7 @@ const AddClass = () => {
     console.log(newClass);
 
     // send data to server starts
-    fetch("https://sports-camp-server.vercel.app/allclasses", {
+    fetch("https://uppity-ants-production.up.railway.app/allclasses", {
       method: "POST",
       headers: {
         "content-type": "application/json",

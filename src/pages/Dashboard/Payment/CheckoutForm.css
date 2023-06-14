@@ -32,6 +32,7 @@ More info: https://stripe.com/docs/stripe-js/reference#element-options
     rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
   border-radius: 4px;
   background: white;
+  margin: 0 auto;
 }
 
 .StripeElement--focus,
@@ -55,4 +56,19 @@ More info: https://stripe.com/docs/stripe-js/reference#element-options
 .StripeElementEPS,
 .StripeElementFpx {
   padding: 0;
+}
+.payment-form button {
+  background: #fe5000;
+  border: navajowhite;
+  padding: 8px 30px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+  margin-right: 10px;
+  width: 200px;
+  margin-top: 20px;
+}
+.payment-form button:hover {
+  background: #171c34;
+  transition: 0.3s;
 }

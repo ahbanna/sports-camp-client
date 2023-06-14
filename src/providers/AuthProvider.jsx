@@ -135,7 +135,7 @@ const AuthProvider = ({ children }) => {
       // get and set token starts
       if (currentUser) {
         axios
-          .post("https://sports-camp-server.vercel.app/jwt", {
+          .post("https://uppity-ants-production.up.railway.app/jwt", {
             email: currentUser.email,
           })
           .then((data) => {

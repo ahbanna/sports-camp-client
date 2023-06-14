@@ -6,14 +6,16 @@ import Swal from "sweetalert2";
 import { AuthContext } from "../../providers/AuthProvider";
 import { Link } from "react-router-dom";
 import { Slide } from "react-awesome-reveal";
+import useTitle from "../../hooks/useTitle";
 
 const Classes = () => {
+  useTitle("All Classes");
   const [classes, setClasses] = useState([]);
   const { user } = useContext(AuthContext);
   // console.log(user.email);
 
   useEffect(() => {
-    fetch("https://sports-camp-server.vercel.app/allclasses")
+    fetch("https://uppity-ants-production.up.railway.app/allclasses")
       .then((res) => res.json())
       .then((data) => {
         const approvedClasses = data.filter(
@@ -28,9 +30,12 @@ const Classes = () => {
       ...selectedClass,
       userEmail: user.email,
     };
-
+    delete dataToSend._id;
     axios
-      .post("https://sports-camp-server.vercel.app/selectedclasses", dataToSend)
+      .post(
+        "https://uppity-ants-production.up.railway.app/selectedclasses",
+        dataToSend
+      )
       .then((res) => {
         console.log(res.data);
         if (res.data.insertedId) {

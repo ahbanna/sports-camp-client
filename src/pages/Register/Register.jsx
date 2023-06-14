@@ -32,7 +32,7 @@ const Register = () => {
             email: data.email,
             photo: data.photoURL,
           };
-          fetch("https://sports-camp-server.vercel.app/users", {
+          fetch("https://uppity-ants-production.up.railway.app/users", {
             method: "POST",
             headers: {
               "content-type": "application/json",

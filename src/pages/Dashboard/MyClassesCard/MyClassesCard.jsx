@@ -26,7 +26,6 @@ const MyClassesCard = ({ myClass }) => {
             <p>
               <span>Feedback: </span>
             </p>
-            {/* TODO: update button design */}
             <Link to={`${_id}`}>
               <button className="update-btn">Update</button>
             </Link>
