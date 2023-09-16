@@ -1,9 +1,11 @@
 .header-area {
-  background-color: #171c34;
+  background: transparent;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
 }
-/* .navbar-nav a {
-  color: #fff;
-} */
 .header-area a.active {
   color: #fe5000;
 }
