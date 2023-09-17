@@ -1,0 +1,28 @@
+.lg-react-element {
+  column-count: 3;
+  column-gap: 10px;
+}
+img {
+  max-width: 100%;
+  display: block;
+  padding: 5px 0;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+img:hover {
+  filter: opacity(0.7);
+  transform: scale(1.01);
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section-title h4 {
+  text-transform: uppercase;
+  font-size: 42px;
+  font-weight: 800;
+  margin-top: -20px;
+}
+.gallery-area {
+  padding: 40px 0;
+}

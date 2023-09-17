@@ -41,7 +41,7 @@ export const router = createBrowserRouter([
       {
         path: "Instructors",
         element: <Instructors></Instructors>,
-        // loader: () => fetch("https://uppity-ants-production.up.railway.app/Instructors"),
+        // loader: () => fetch("http://localhost:5000/Instructors"),
       },
     ],
   },
@@ -73,9 +73,7 @@ export const router = createBrowserRouter([
         path: "myclasses/:id",
         element: <UpdateClasses></UpdateClasses>,
         loader: ({ params }) =>
-          fetch(
-            `https://uppity-ants-production.up.railway.app/myclasses/${params.id}`
-          ),
+          fetch(`http://localhost:5000/myclasses/${params.id}`),
       },
       {
         path: "selectedclasses",

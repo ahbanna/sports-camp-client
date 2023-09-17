@@ -15,7 +15,7 @@ const Classes = () => {
   // console.log(user.email);
 
   useEffect(() => {
-    fetch("https://uppity-ants-production.up.railway.app/allclasses")
+    fetch("http://localhost:5000/allclasses")
       .then((res) => res.json())
       .then((data) => {
         const approvedClasses = data.filter(
@@ -32,10 +32,7 @@ const Classes = () => {
     };
     delete dataToSend._id;
     axios
-      .post(
-        "https://uppity-ants-production.up.railway.app/selectedclasses",
-        dataToSend
-      )
+      .post("http://localhost:5000/selectedclasses", dataToSend)
       .then((res) => {
         console.log(res.data);
         if (res.data.insertedId) {

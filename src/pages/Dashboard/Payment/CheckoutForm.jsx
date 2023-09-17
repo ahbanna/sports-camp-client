@@ -33,7 +33,7 @@
 
 //   // useEffect(() => {
 //   //   fetch(
-//   //     "https://uppity-ants-production.up.railway.app/create-payment-intent",
+//   //     "http://localhost:5000/create-payment-intent",
 //   //     {
 //   //       method: "POST",
 //   //       headers: {
@@ -180,10 +180,7 @@ const CheckoutForm = ({
     );
     if (price > 0) {
       axiosSecure
-        .post(
-          "https://uppity-ants-production.up.railway.app/create-payment-intent",
-          { price }
-        )
+        .post("http://localhost:5000/create-payment-intent", { price })
         .then((res) => {
           console.log(res.data.clientSecret);
           setClientSecret(res.data.clientSecret);
@@ -257,7 +254,7 @@ const CheckoutForm = ({
         date: new Date(),
       };
       axiosSecure
-        .post("https://uppity-ants-production.up.railway.app/payments", payment)
+        .post("http://localhost:5000/payments", payment)
         .then((res) => {
           console.log(res.data);
           if (res.data.insertedId) {

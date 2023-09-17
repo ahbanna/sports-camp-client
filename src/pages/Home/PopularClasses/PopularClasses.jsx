@@ -6,7 +6,7 @@ const PopularClasses = () => {
   const [popularClasses, setPopularClasses] = useState([]);
 
   useEffect(() => {
-    fetch("https://uppity-ants-production.up.railway.app/allclasses")
+    fetch("http://localhost:5000/allclasses")
       .then((res) => res.json())
       .then((data) => {
         const slicedData = data.slice(0, 6);

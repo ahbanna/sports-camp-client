@@ -9,9 +9,7 @@ const PaymentHistory = () => {
   const { user } = useContext(AuthContext);
   const [history, setHistory] = useState([]);
   useEffect(() => {
-    fetch(
-      `https://uppity-ants-production.up.railway.app/payments?userEmail=${user?.email}`
-    )
+    fetch(`http://localhost:5000/payments?userEmail=${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         // apply sorting

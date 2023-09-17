@@ -31,7 +31,7 @@ const AddClass = () => {
     console.log(newClass);
 
     // send data to server starts
-    fetch("https://uppity-ants-production.up.railway.app/allclasses", {
+    fetch("http://localhost:5000/allclasses", {
       method: "POST",
       headers: {
         "content-type": "application/json",

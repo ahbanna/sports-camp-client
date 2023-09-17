@@ -6,7 +6,7 @@ import { AuthContext } from "../providers/AuthProvider";
 // import useAuth from "./useAuth";
 
 const axiosSecure = axios.create({
-  baseURL: "https://uppity-ants-production.up.railway.app",
+  baseURL: "http://localhost:5000",
 });
 
 const useAxiosSecure = () => {
@@ -16,7 +16,7 @@ const useAxiosSecure = () => {
   const navigate = useNavigate();
 
   // const axiosSecure = axios.create({
-  //   baseURL: "https://uppity-ants-production.up.railway.app",
+  //   baseURL: "http://localhost:5000",
   // });
 
   useEffect(() => {

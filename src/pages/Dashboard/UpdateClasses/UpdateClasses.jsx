@@ -23,7 +23,7 @@ const UpdateClasses = () => {
     console.log(updatedClass);
 
     // send data to server starts
-    fetch(`https://uppity-ants-production.up.railway.app/myclasses/${_id}`, {
+    fetch(`http://localhost:5000/myclasses/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

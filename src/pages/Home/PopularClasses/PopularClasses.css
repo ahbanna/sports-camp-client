@@ -18,16 +18,16 @@
 .single-popular-ins img {
   height: 350px;
 }
-.popular-class-area .section-title {
+/* .popular-class-area .section-title {
   text-align: center;
   margin-bottom: 30px;
-}
-.popular-class-area .section-title h4 {
+} */
+/* .popular-class-area .section-title h4 {
   text-transform: uppercase;
   font-size: 42px;
   font-weight: 800;
   margin-top: -28px;
-}
+} */
 @media only screen and (max-width: 576px) {
   .popular-class-area .section-title h4 {
     font-size: 24px;

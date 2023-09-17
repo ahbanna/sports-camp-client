@@ -9,14 +9,14 @@
 
 //   // for laod all users from database starts
 //   const { data: users = [], refetch } = useQuery(["users"], async () => {
-//     const res = await fetch("https://uppity-ants-production.up.railway.app/users");
+//     const res = await fetch("http://localhost:5000/users");
 //     return res.json();
 //   });
 //   // for laod all users from database end
 
 //   // Make user as admin starts
 //   const handleMakeAdmin = (user) => {
-//     fetch(`https://uppity-ants-production.up.railway.app/users/admin/${user._id}`, {
+//     fetch(`http://localhost:5000/users/admin/${user._id}`, {
 //       method: "PATCH",
 //     })
 //       .then((res) => res.json())
@@ -90,20 +90,15 @@ import { Slide } from "react-awesome-reveal";
 const ManageUsers = () => {
   // for loading all users from the database
   const { data: users = [], refetch } = useQuery(["users"], async () => {
-    const res = await fetch(
-      "https://uppity-ants-production.up.railway.app/users"
-    );
+    const res = await fetch("http://localhost:5000/users");
     return res.json();
   });
 
   // Make user as admin or instructor
   const handleMakeRole = (user, role) => {
-    fetch(
-      `https://uppity-ants-production.up.railway.app/users/${role}/${user._id}`,
-      {
-        method: "PATCH",
-      }
-    )
+    fetch(`http://localhost:5000/users/${role}/${user._id}`, {
+      method: "PATCH",
+    })
       .then((res) => res.json())
       .then((data) => {
         if (data.modifiedCount) {
@@ -122,7 +117,7 @@ const ManageUsers = () => {
   // // Function to set the default role for new users
   // const setDefaultRole = (user) => {
   //   if (!user.role) {
-  //     fetch(`https://uppity-ants-production.up.railway.app/users/default-role/${user._id}`, {
+  //     fetch(`http://localhost:5000/users/default-role/${user._id}`, {
   //       method: "PATCH",
   //     })
   //       .then((res) => res.json())

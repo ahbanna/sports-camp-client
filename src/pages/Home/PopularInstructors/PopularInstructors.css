@@ -1,10 +1,14 @@
 .all-popular-ins-area {
   padding: 40px 0;
+  background: #eaeaea;
 }
 .all-popular-ins {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
+}
+.all-popular-ins-area .section-title p {
+  font-size: 18px;
 }
 .single-popular-ins p {
   margin-bottom: 8px;
@@ -14,6 +18,7 @@
 }
 .single-popular-ins .card-title {
   text-transform: uppercase;
+  font-weight: 700;
 }
 .single-popular-ins img {
   height: 350px;

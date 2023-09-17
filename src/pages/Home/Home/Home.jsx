@@ -4,6 +4,7 @@ import Banner from "../Banner/Banner";
 import AboutUs from "../AboutUs/AboutUs";
 import PopularInstructors from "../PopularInstructors/PopularInstructors";
 import PopularClasses from "../PopularClasses/PopularClasses";
+import { Gallery } from "../Gallery/Gallery";
 
 const Home = () => {
   useTitle("Home");
@@ -12,6 +13,7 @@ const Home = () => {
       <Banner></Banner>
       <PopularInstructors></PopularInstructors>
       <PopularClasses></PopularClasses>
+      <Gallery></Gallery>
       <AboutUs></AboutUs>
     </div>
   );

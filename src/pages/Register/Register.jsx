@@ -32,7 +32,7 @@ const Register = () => {
             email: data.email,
             photo: data.photoURL,
           };
-          fetch("https://uppity-ants-production.up.railway.app/users", {
+          fetch("http://localhost:5000/users", {
             method: "POST",
             headers: {
               "content-type": "application/json",

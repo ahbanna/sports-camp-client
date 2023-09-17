@@ -135,7 +135,7 @@ const AuthProvider = ({ children }) => {
       // get and set token starts
       if (currentUser) {
         axios
-          .post("https://uppity-ants-production.up.railway.app/jwt", {
+          .post("http://localhost:5000/jwt", {
             email: currentUser.email,
           })
           .then((data) => {
