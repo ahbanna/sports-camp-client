@@ -1,0 +1,56 @@
+.principles-area {
+  padding: 60px 0;
+  background: #eaeaea;
+}
+.area-title {
+  text-align: center;
+}
+.area-title p {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.area-title h2 {
+  font-size: 48px;
+  text-transform: uppercase;
+}
+.area-title span {
+  font-weight: 900;
+  color: #fe5000;
+}
+.all-principles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 40px 0;
+}
+.single-principle {
+  text-align: center;
+}
+.single-principle svg {
+  font-size: 50px;
+  background: #fe5000;
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  height: 70px;
+  width: 70px;
+  padding: 15px;
+  transition: all 280ms ease;
+}
+.single-principle:hover svg {
+  background: transparent;
+  color: #fe5000;
+  border: 2px solid #fe5000;
+}
+.single-principle .card-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 15px 0 10px 0;
+}
+.single-principle .card {
+  border: 1px solid #fe5000;
+}
+.single-principle .card-text {
+  color: #717171;
+}
