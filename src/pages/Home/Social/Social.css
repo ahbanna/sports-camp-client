@@ -1,0 +1,100 @@
+.social-area {
+  padding: 50px 0;
+  background: #f9f9f9;
+}
+.social-area-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+}
+.social-left {
+  text-align: left;
+}
+.social-left .area-title {
+  text-align: left;
+}
+.social-area .social-link {
+  margin-top: 15px;
+}
+
+.social-area .social-link ul li {
+  display: inline-block;
+}
+
+.social-area .social-link ul li a {
+  height: 50px;
+  width: 50px;
+  background: transparent;
+  /* border-radius: 50%; */
+  display: inline-block;
+  border: 1px solid #fe5000;
+  overflow: hidden;
+  transition: width 0.4s ease 0s, background 0.4s ease 0s;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fe5000;
+  opacity: 1;
+}
+.social-area .social-link ul li:hover a {
+  width: 125px;
+  text-align: left;
+  border-radius: 50px;
+  background: #fe5000;
+  color: #fff;
+}
+
+.social-area .social-link ul li svg {
+  left: 9px;
+  top: 8px;
+  float: left;
+  position: absolute;
+  transition: all 0.8s ease 0s;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.social-area .social-link ul li:hover svg {
+  transform: rotate(360deg);
+  line-height: 12px;
+}
+
+.social-area .social-link span {
+  font-size: 16px;
+  color: #4c5667;
+  text-transform: capitalize;
+  position: absolute;
+  top: 0;
+  left: 45px;
+  text-align: left;
+  transition: left 0.5s ease 0s, opacity 0.5s ease 0s;
+  opacity: 0;
+  font-weight: 600;
+  line-height: 43px;
+}
+
+.social-area .social-link:hover span {
+  opacity: 1;
+  color: #fff;
+}
+.social-area .custom-btn button::before {
+  width: 100%;
+}
+/* Social right side */
+.social-right {
+  display: flex;
+  position: relative;
+}
+.socialimg1 {
+  text-align: right;
+}
+.socialimg1 img {
+  width: 70%;
+}
+.socialimg2 img {
+  width: 75%;
+  position: absolute;
+  bottom: 67px;
+  left: 55px;
+}

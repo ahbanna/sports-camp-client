@@ -7,6 +7,7 @@ import PopularClasses from "../PopularClasses/PopularClasses";
 import { Gallery } from "../Gallery/Gallery";
 import Join from "../Join/Join";
 import Principles from "../Principles/Principles";
+import Social from "../Social/Social";
 
 const Home = () => {
   useTitle("Home");
@@ -17,6 +18,7 @@ const Home = () => {
       <PopularClasses></PopularClasses>
       <Gallery></Gallery>
       <Principles></Principles>
+      <Social></Social>
       <Join></Join>
       <AboutUs></AboutUs>
     </div>

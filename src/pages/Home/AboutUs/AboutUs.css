@@ -1,14 +1,12 @@
-.about-area {
-  padding: 40px 0;
-}
 .about-img {
-  background-image: url(${aboutImg2});
+  background-image: url("${aboutImg2}");
   background-size: cover;
   width: 100%;
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -2px;
 }
 .about-content h2 {
   color: #fff;

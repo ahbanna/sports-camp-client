@@ -36,33 +36,35 @@ export function Gallery() {
     console.log("lightGallery has been initialized");
   };
   return (
-    <div className="App gallery-area container">
-      <div className="section-title">
-        <Slide triggerOnce>
-          <h3 className="main-heading">At a glance</h3>
-        </Slide>
-        <h4>Our Gallery</h4>
+    <div className="App gallery-area ">
+      <div className="container">
+        <div className="section-title">
+          <Slide triggerOnce>
+            <h3 className="main-heading">At a glance</h3>
+          </Slide>
+          <h4>Our Gallery</h4>
+        </div>
+        <LightGallery
+          onInit={onInit}
+          speed={500}
+          plugins={[
+            lgThumbnail,
+            lgZoom,
+            lgAutoplay,
+            lgFullscreen,
+            lgRotate,
+            lgShare,
+          ]}
+        >
+          {galleryImages.map((image, index) => {
+            return (
+              <a href={image.src} key={index}>
+                <img alt={image.alt} src={image.src} />
+              </a>
+            );
+          })}
+        </LightGallery>
       </div>
-      <LightGallery
-        onInit={onInit}
-        speed={500}
-        plugins={[
-          lgThumbnail,
-          lgZoom,
-          lgAutoplay,
-          lgFullscreen,
-          lgRotate,
-          lgShare,
-        ]}
-      >
-        {galleryImages.map((image, index) => {
-          return (
-            <a href={image.src} key={index}>
-              <img alt={image.alt} src={image.src} />
-            </a>
-          );
-        })}
-      </LightGallery>
     </div>
   );
 }
