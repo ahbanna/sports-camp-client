@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import scrollToTopIcon from "../../../src/assets/icons/football.png";
+import scrollToTopIcon2 from "../../../src/assets/icons/football2.png";
+import scrollToTopIcon3 from "../../../src/assets/icons/football3.png";
 import "./ScrollToTop.css";
 
 const ScrollToTop = () => {
@@ -29,7 +31,7 @@ const ScrollToTop = () => {
   }, []);
   return (
     <div className="scrollIcon">
-      {isVisible && <img src={scrollToTopIcon} alt="" onClick={scrollToTop} />}
+      {isVisible && <img src={scrollToTopIcon3} alt="" onClick={scrollToTop} />}
     </div>
   );
 };

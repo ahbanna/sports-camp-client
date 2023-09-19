@@ -6,7 +6,7 @@
   z-index: 1;
 }
 .scrollIcon img {
-  height: 100px;
+  height: 70px;
   cursor: pointer;
   animation: bounce 2s infinite;
 }
