@@ -9,6 +9,7 @@ import Join from "../Join/Join";
 import Principles from "../Principles/Principles";
 import Social from "../Social/Social";
 import Faq from "../Faq/Faq";
+import Partners from "../Partners/Partners";
 
 const Home = () => {
   useTitle("Home");
@@ -23,6 +24,7 @@ const Home = () => {
       <Faq></Faq>
       <Join></Join>
       <AboutUs></AboutUs>
+      <Partners></Partners>
     </div>
   );
 };

@@ -1,0 +1,30 @@
+.partners-area {
+  padding: 60px 0;
+  background: #eaeaea;
+}
+.partners-img-first-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+}
+.partners-img-sec-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  margin-top: 25px;
+}
+.partners-area img {
+  height: 50px;
+  filter: grayscale(1);
+  transition: all 0.4s;
+  opacity: 0.4;
+}
+.partners-area img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+.partners-content {
+  margin-top: 60px;
+}
