@@ -15,7 +15,7 @@ const Partners = () => {
       <div className="area-title">
         <p>partners</p>
         <h2>
-          Our<span> Partners</span>
+          Our<span> Sponsorship</span>
         </h2>
       </div>
       <div className="partners-content container">

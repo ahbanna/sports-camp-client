@@ -6,7 +6,13 @@ import {
   FaDribbble,
   FaGoogle,
   FaFacebookF,
+  FaPhoneAlt,
+  FaRegEnvelope,
+  FaRegCalendarAlt,
 } from "react-icons/fa";
+import { IoHome } from "react-icons/io5";
+import { BsFillCalendarXFill } from "react-icons/bs";
+
 import "./Footer.css";
 import footerBg from "../../../assets/footer-bg.png";
 import { Nav } from "react-bootstrap";
@@ -77,12 +83,36 @@ const Footer = () => {
               <div className="footer-contact">
                 <h3>Location & Hours</h3>
                 <ul>
-                  <li>Mon – Sat: 6:00 – 12:00 </li>
-                  <li>Sunday – Closed</li>
-                  <br />
-                  <li>Dhaka, Bangladesh</li>
-                  <li>Phone: +88 01911 000 000</li>
-                  <li>Email: alhasanulbanna@gmail.com</li>
+                  <li>
+                    <div className="footer-icon">
+                      <IoHome></IoHome>
+                    </div>
+                    Dhaka, Bangladesh
+                  </li>
+                  <li>
+                    <div className="footer-icon">
+                      <FaPhoneAlt></FaPhoneAlt>
+                    </div>
+                    Phone: +88 01911 000 000
+                  </li>
+                  <li>
+                    <div className="footer-icon">
+                      <FaRegEnvelope></FaRegEnvelope>
+                    </div>
+                    Email: alhasanulbanna@gmail.com
+                  </li>
+                  <li>
+                    <div className="footer-icon">
+                      <FaRegCalendarAlt></FaRegCalendarAlt>
+                    </div>
+                    Mon – Sat: 6:00 – 12:00
+                  </li>
+                  <li>
+                    <div className="footer-icon">
+                      <BsFillCalendarXFill></BsFillCalendarXFill>
+                    </div>
+                    Sunday – Closed
+                  </li>
                 </ul>
               </div>
             </div>

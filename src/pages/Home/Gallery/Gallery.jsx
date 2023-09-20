@@ -38,11 +38,11 @@ export function Gallery() {
   return (
     <div className="App gallery-area ">
       <div className="container">
-        <div className="section-title">
-          <Slide triggerOnce>
-            <h3 className="main-heading">At a glance</h3>
-          </Slide>
-          <h4>Our Gallery</h4>
+        <div className="area-title">
+          <p>checkout</p>
+          <h2>
+            our<span> gallery</span>
+          </h2>
         </div>
         <LightGallery
           onInit={onInit}

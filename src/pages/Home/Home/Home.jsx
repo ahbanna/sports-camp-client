@@ -10,6 +10,7 @@ import Principles from "../Principles/Principles";
 import Social from "../Social/Social";
 import Faq from "../Faq/Faq";
 import Partners from "../Partners/Partners";
+import ClassFind from "../ClassFind/ClassFind";
 
 const Home = () => {
   useTitle("Home");
@@ -25,6 +26,7 @@ const Home = () => {
       <Join></Join>
       <AboutUs></AboutUs>
       <Partners></Partners>
+      <ClassFind></ClassFind>
     </div>
   );
 };
