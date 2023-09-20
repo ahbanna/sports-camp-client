@@ -53,6 +53,7 @@
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+  background-color: #f9f9f9;
 }
 
 body.dark-theme {

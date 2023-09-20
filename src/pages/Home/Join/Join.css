@@ -1,4 +1,4 @@
-.join-area {
+/* .join-area {
   background-image: url(/src/assets/join-bg.jpg);
   min-height: 500px;
   background-repeat: no-repeat;
@@ -32,4 +32,35 @@
 }
 .join-area-content p {
   font-size: 18px;
+} */
+.join-area {
+  padding: 80px 0;
+  position: relative;
+  background: #f9f9f9;
+}
+.slick-slide.slick-active.slick-center.slick-current {
+  width: 600px !important;
+}
+/* .join-area-content.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+} */
+.join-area-text {
+  width: 50%;
+}
+.join-area-slider {
+  width: 50%;
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+.join-area .custom-btn a {
+  color: #000;
+}
+.join-area .area-title {
+  text-align: left;
+}
+.join-area .custom-btn {
+  margin-top: 30px;
 }
