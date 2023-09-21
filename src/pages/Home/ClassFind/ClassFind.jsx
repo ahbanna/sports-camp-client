@@ -10,7 +10,12 @@ const ClassFind = () => {
         <h3>
           Need Help Figuring Out Which Class Is Right for You or You Child?
         </h3>
-        <div className="custom-btn">
+        <div
+          className="custom-btn"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="500"
+        >
           <button>
             <Link to="/">Find a class for me</Link>
           </button>

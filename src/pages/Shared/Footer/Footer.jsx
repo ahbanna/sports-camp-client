@@ -23,7 +23,7 @@ const Footer = () => {
       <div className="footer-bg">
         <img src={footerBg} alt="" />
       </div>
-      <div className="footer-container">
+      <div className="footer-container" data-aos="zoom-in-up">
         <div className="container">
           <div className="row">
             <div className="col-lg-3">
@@ -126,7 +126,12 @@ const Footer = () => {
                   id=""
                   placeholder="Enter Your Email"
                 />
-                <div className="subscribe-btn custom-btn">
+                <div
+                  className="subscribe-btn custom-btn"
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                >
                   <button>
                     <input type="submit" value="Subscribe Now" />
                   </button>

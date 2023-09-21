@@ -26,23 +26,23 @@
   margin-top: 30px;
 }
 
-.slick-arrow.slick-prev {
+.join-area .slick-arrow.slick-prev {
   top: 109% !important;
   left: 47%;
 }
-.slick-arrow.slick-next {
+.join-area .slick-arrow.slick-next {
   top: 109%;
   right: 43%;
 }
-.slick-prev,
-.slick-next {
+.join-area .slick-prev,
+.join-area .slick-next {
   width: 40px !important;
   height: 40px !important;
   border-radius: 50%;
   background: #fe5000 !important;
 }
-.slick-prev::before,
-.slick-next::before {
+.join-area .slick-prev::before,
+.join-area .slick-next::before {
   font-size: 30px !important;
   line-height: 0.5 !important;
   color: #fff !important;

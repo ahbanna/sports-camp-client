@@ -24,7 +24,7 @@ const Join = () => {
   return (
     <div className="join-area">
       <div className="join-area-content container">
-        <div className="join-area-text">
+        <div className="join-area-text" data-aos="fade-right">
           <div className="area-title">
             <p>join today</p>
             <h2>
@@ -44,7 +44,7 @@ const Join = () => {
             </button>
           </div>
         </div>
-        <div className="join-area-slider">
+        <div className="join-area-slider" data-aos="flip-right">
           <Slider {...settings}>
             <div>
               <img src={img1} alt="" srcset="" />

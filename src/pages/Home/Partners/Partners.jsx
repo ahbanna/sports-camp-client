@@ -12,13 +12,13 @@ import partimg9 from "../../../assets/partners/9.png";
 const Partners = () => {
   return (
     <div className="partners-area">
-      <div className="area-title">
+      <div className="area-title" data-aos="zoom-in-down">
         <p>partners</p>
         <h2>
           Our<span> Sponsorship</span>
         </h2>
       </div>
-      <div className="partners-content container">
+      <div className="partners-content container" data-aos="zoom-in">
         <div className="partners-img-first-row">
           <img src={partimg1} alt="" srcset="" />
           <img src={partimg9} alt="" srcset="" />

@@ -28,7 +28,7 @@ const PopularInstructors = () => {
           share their passion for the beautiful game.
         </p>
       </div>
-      <div className="all-popular-ins container">
+      <div className="all-popular-ins container" data-aos="zoom-in-down">
         {popular.map((item) => (
           <div key={item._id}>
             <div className="single-popular-ins">

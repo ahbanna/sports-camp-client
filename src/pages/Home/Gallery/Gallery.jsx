@@ -36,34 +36,40 @@ export function Gallery() {
     console.log("lightGallery has been initialized");
   };
   return (
-    <div className="App gallery-area ">
+    <div className="gallery-area">
       <div className="container">
-        <div className="area-title">
+        <div className="area-title" data-aos="zoom-in">
           <p>checkout</p>
           <h2>
             our<span> gallery</span>
           </h2>
         </div>
-        <LightGallery
-          onInit={onInit}
-          speed={500}
-          plugins={[
-            lgThumbnail,
-            lgZoom,
-            lgAutoplay,
-            lgFullscreen,
-            lgRotate,
-            lgShare,
-          ]}
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000"
         >
-          {galleryImages.map((image, index) => {
-            return (
-              <a href={image.src} key={index}>
-                <img alt={image.alt} src={image.src} />
-              </a>
-            );
-          })}
-        </LightGallery>
+          <LightGallery
+            onInit={onInit}
+            speed={500}
+            plugins={[
+              lgThumbnail,
+              lgZoom,
+              lgAutoplay,
+              lgFullscreen,
+              lgRotate,
+              lgShare,
+            ]}
+          >
+            {galleryImages.map((image, index) => {
+              return (
+                <a href={image.src} key={index}>
+                  <img alt={image.alt} src={image.src} />
+                </a>
+              );
+            })}
+          </LightGallery>
+        </div>
       </div>
     </div>
   );

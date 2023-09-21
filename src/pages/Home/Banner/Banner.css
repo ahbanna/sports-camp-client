@@ -1,9 +1,9 @@
-.banner-img img {
+/* .banner-img img {
   width: 100%;
   background-repeat: no-repeat;
   background-position: inherit;
   background-size: inherit;
-  /* height: 100vh; */
+  
 }
 .banner-content {
   position: absolute;
@@ -25,7 +25,6 @@
 .banner-content span {
   background: #ffffff;
   background: linear-gradient(to top left, #ffffff 0%, #fe5000 60%);
-  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
 }
 .swiper-wrapper {
@@ -33,7 +32,6 @@
 }
 @font-face {
   font-family: "Great Sejagad";
-  /* src: url("../../../../public/Great\ Sejagad.ttf") format("truetype"); */
   src: url("../../../../Great\ Sejagad.ttf") format("truetype");
 }
 .main-heading {
@@ -46,7 +44,6 @@
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
-  /* margin-top: -220px; */
   position: absolute;
   bottom: 0;
 }
@@ -63,46 +60,6 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.25);
 }
-
-/* SWIPER */
-/* #app {
-  height: 100%;
-}
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-} */
-
-/* .swiper-slide {
-  font-size: 18px;
-  background: #fff;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
 
 .autoplay-progress {
   position: absolute;
@@ -144,4 +101,79 @@ body {
   .custom-btn button {
     width: 130px;
   }
+} */
+.banner-area .slick-arrow.slick-prev {
+  left: 5%;
+  z-index: 1;
+}
+.banner-area .slick-arrow.slick-next {
+  right: 5%;
+}
+.banner-area .slick-prev,
+.banner-area .slick-next {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 0;
+  background: #fe5000 !important;
+  opacity: 0.7;
+  border-radius: 0 !important;
+  transition: 0.4s;
+}
+.banner-area .slick-prev::before,
+.banner-area .slick-next::before {
+  font-size: 30px !important;
+  line-height: 0.5 !important;
+  color: #fff !important;
+  font-family: unset !important;
+}
+.banner-area .slick-prev:hover,
+.banner-area .slick-next:hover {
+  background: #000 !important;
+  border-radius: 50% !important;
+  transition: 0.4s;
+  opacity: 1;
+}
+.banner-area .slick-dots {
+  bottom: 5% !important;
+}
+.banner-area .slick-dots li button {
+  background: #fe5000 !important;
+}
+.banner-area .slick-dots li button:before {
+  content: "•";
+  opacity: 1 !important;
+  color: #fff !important;
+}
+.banner-area .slick-dots li.slick-active button::before {
+  color: black !important;
+}
+.banner-area .slick-slide img {
+  display: block;
+  /* height: 100vh; */
+  width: 100%;
+}
+
+.slider-bg {
+  background-image: url(../../../assets//banner/football.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.banner-content.container {
+  display: grid;
+  height: 100vh;
+  align-content: center;
+}
+.banner-content h2 {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 780px;
+  color: #fff;
+  line-height: 65px;
+}
+.banner-content p {
+  width: 580px;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 18px;
 }

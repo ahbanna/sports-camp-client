@@ -6,17 +6,17 @@ function Faq() {
   return (
     <div className="faq-area">
       <div className="container">
-        <div className="area-title">
+        <div className="area-title" data-aos="flip-up">
           <p>Faq</p>
           <h2>
             Questions? <span>Look Here</span>
           </h2>
         </div>
         <div className="faq-content">
-          <div className="faq-img">
+          <div className="faq-img" data-aos="fade-up-right">
             <img src={faqImg} alt="" srcset="" />
           </div>
-          <div className="faq">
+          <div className="faq" data-aos="fade-up-left">
             <Accordion defaultActiveKey="0" flush>
               <Accordion.Item eventKey="0">
                 <Accordion.Header>

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Social = () => {
   return (
-    <div className="social-area">
+    <div className="social-area" data-aos="zoom-in-down">
       <div className="social-area-content container">
         <div className="social-left">
           <div className="area-title">
