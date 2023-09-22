@@ -61,6 +61,7 @@
   transition: 0.3s;
   color: #fe5000;
 }
+
 .subscribe-btn.custom-btn button::before {
   content: "";
   position: absolute;
@@ -72,9 +73,14 @@
   transition: width 0.3s;
   z-index: -1;
 }
+.subscribe-btn.custom-btn button:hover:before {
+  width: 100%;
+  transition: 0.3s;
+}
 .subscribe-btn.custom-btn input {
   border: none;
 }
+
 .footer-subscribe form input {
   height: 45px;
   width: 100%;
@@ -86,6 +92,7 @@
   border-bottom: 1px solid #9597a2;
   outline: none;
 }
+
 .copyright {
   border-top: 2px solid #fe5000;
 }

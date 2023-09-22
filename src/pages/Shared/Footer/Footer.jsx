@@ -128,9 +128,6 @@ const Footer = () => {
                 />
                 <div
                   className="subscribe-btn custom-btn"
-                  data-aos="fade-down"
-                  data-aos-easing="linear"
-                  data-aos-duration="500"
                 >
                   <button>
                     <input type="submit" value="Subscribe Now" />

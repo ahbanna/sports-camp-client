@@ -33,6 +33,53 @@
 .sideabar-menu a.active {
   color: #000;
 }
+/* It is for custom button */
+
+.custom-btn {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.custom-btn button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  width: 200px;
+  position: relative;
+  z-index: 1;
+}
+
+.custom-btn button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 33.33%;
+  transition: width 0.3s;
+  z-index: -1;
+  background: linear-gradient(
+    to right,
+    #ff2100,
+    #ff4000,
+    #ff5500,
+    #ff6700,
+    #ff7600
+  );
+}
+
+.custom-btn button:hover:before {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.custom-btn a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
 /* It is for scroll to top */
 .relative {
   position: relative;

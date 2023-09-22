@@ -1,62 +1,63 @@
-.about-img {
-  background-image: url("${aboutImg2}");
-  background-size: cover;
-  width: 100%;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -2px;
+/* modofication */
+.about-area {
+  min-height: 800px;
+  padding: 80px 0;
 }
-.about-content h2 {
-  color: #fff;
-  font-weight: 800;
-  font-size: 42px;
-  line-height: 5rem;
-  margin-top: -55px;
-}
-.about-content p {
-  color: #bdbdbd;
-  font-size: 17px;
-  margin: 20px 0;
-}
-/*  */
-.custom-btn {
-  display: inline-block;
-  overflow: hidden;
-}
-
-.custom-btn button {
-  background-color: transparent;
-  border: none;
-  padding: 10px;
-  width: 200px;
+.about-area-left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
   position: relative;
-  z-index: 1;
 }
-
-.custom-btn button:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 33.33%;
-  background-color: #fe5000;
-  transition: width 0.3s;
-  z-index: -1;
+.about-area-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
 }
-
-.custom-btn button:hover:before {
+.about-area-left img {
   width: 100%;
-  transition: 0.3s;
 }
-
-.custom-btn a {
+.about-area-left .img2 {
+  margin-top: 80px;
+}
+.img3 {
+  position: absolute;
+  width: 320px;
+  /* height: 255px; */
+  bottom: -3%;
+  left: 17%;
+}
+.about-area .area-title {
+  text-align: left;
+}
+.about-area .area-title h2 {
+  font-size: 28px;
+  text-transform: inherit;
+}
+.about-area-right {
+  padding: 50px 20px;
+}
+.about-area .custom-btn button::before {
+  width: 100%;
+}
+.about-area .custom-btn:hover a {
   color: #fff;
-  text-decoration: none;
+}
+.about-area .custom-btn button:hover::before {
+  background: #000;
+  transition: width 0.3s;
+}
+.short-features {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.short-features h5 {
   font-weight: 600;
-  text-transform: uppercase;
+}
+.short-features p {
+  margin-bottom: 6px;
+  letter-spacing: 2px;
 }
 @media only screen and (max-width: 576px) {
   .about-img {

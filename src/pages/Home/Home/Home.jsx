@@ -17,6 +17,7 @@ const Home = () => {
   return (
     <div>
       <Banner></Banner>
+      <AboutUs></AboutUs>
       <PopularInstructors></PopularInstructors>
       <PopularClasses></PopularClasses>
       <Gallery></Gallery>
@@ -24,7 +25,6 @@ const Home = () => {
       <Social></Social>
       <Faq></Faq>
       <Join></Join>
-      <AboutUs></AboutUs>
       <Partners></Partners>
       <ClassFind></ClassFind>
     </div>
