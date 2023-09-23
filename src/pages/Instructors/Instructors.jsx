@@ -110,6 +110,7 @@ import {
   FaRegEnvelope,
   FaRegCalendarAlt,
 } from "react-icons/fa";
+import PageToBanner from "../Shared/PageToBanner/PageToBanner";
 
 const Instructors = () => {
   useTitle("All Instructors");
@@ -127,6 +128,7 @@ const Instructors = () => {
   }, []);
   return (
     <div className="instructor-area">
+      <PageToBanner title="Instructors"></PageToBanner>
       <div className="container">
         <div className="area-title" data-aos="zoom-in">
           <h5>Our Instructors</h5>
@@ -138,11 +140,10 @@ const Instructors = () => {
             and share their passion for the beautiful game.
           </p>
         </div>
-
         <div className="all-instructor">
           {instructors.map((Instructor) => (
             <div className="single-instructor">
-              <Card style={{ width: "18rem" }} className="image">
+              <Card style={{ width: "25rem" }} className="image">
                 <Card.Img variant="top" src={Instructor.photo} />
                 <div className="content">
                   <Card.Body className="text-center">

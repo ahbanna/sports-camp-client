@@ -1,0 +1,39 @@
+.breadcrumbs-area {
+  background-color: #1a1b1e;
+  text-align: center;
+  min-height: 400px;
+  display: grid;
+  align-content: center;
+}
+.breadcrumbs-area h3 {
+  color: #fff;
+  font-size: 60px;
+}
+.breadcrumbs {
+  max-width: 100%;
+  overflow-x: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.breadcrumbs ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.breadcrumbs ul li {
+  color: #fff;
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+}
+.breadcrumbs .active {
+  color: #fe5000;
+  font-weight: 600;
+}
+.breadcrumbs ul li:hover a {
+  color: #fe5000;
+  transition: 0.4s;
+}
+.active svg {
+  margin-right: 5px;
+  font-size: 20px;
+}

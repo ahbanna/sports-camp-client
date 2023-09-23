@@ -100,6 +100,10 @@
   font-weight: 900;
   color: #fe5000;
 }
+.area-title p {
+  color: #777777;
+  font-size: 18px;
+}
 /* It is for scroll to top */
 .relative {
   position: relative;
