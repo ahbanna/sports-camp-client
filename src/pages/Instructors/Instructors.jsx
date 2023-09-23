@@ -140,7 +140,11 @@ const Instructors = () => {
             and share their passion for the beautiful game.
           </p>
         </div>
-        <div className="all-instructor">
+        <div
+          className="all-instructor"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           {instructors.map((Instructor) => (
             <div className="single-instructor">
               <Card style={{ width: "25rem" }} className="image">

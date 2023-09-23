@@ -84,6 +84,7 @@
 /* This is for section title */
 .area-title {
   text-align: center;
+  padding: 20px 0;
 }
 .area-title h5 {
   font-size: 30px;
@@ -94,7 +95,7 @@
 .area-title h2 {
   font-size: 48px;
   text-transform: uppercase;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .area-title span {
   font-weight: 900;

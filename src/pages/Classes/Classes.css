@@ -1,31 +1,75 @@
+.approved-class-area .area-title {
+  padding: 40px 0;
+}
+.approved-class-area .area-title p {
+  width: 70%;
+  margin: 0 auto;
+}
 .all-approved-class {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
+  position: relative;
 }
-.single-approved-class p {
-  margin-bottom: 8px;
+.approved-class-area .card-text {
+  text-align: left;
 }
-.single-approved-class span {
-  font-weight: 500;
-}
-.single-approved-class .card-title {
-  text-transform: uppercase;
+.single-approved-class .card-title.h5 {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  text-transform: inherit;
+  background: #fe5000;
+  padding: 5px 15px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 18px;
 }
 .single-approved-class img {
   height: 270px;
 }
-.single-approved-class button {
+.rating-star svg {
+  stroke: #fe5000 !important;
+  height: 20px;
+}
+.rating-star .rr--on .rr--svg {
+  fill: #fe5000;
+}
+.ins-name {
+  margin: 7px 0;
+}
+.single-approved-class span {
+  font-weight: 600;
+}
+.seat-price {
+  display: flex;
+  justify-content: space-between;
+}
+.price {
+  color: #0d5ef4;
+}
+.select-btn {
+  text-align: center;
+  margin: 25px 0 10px 0;
+  /* display: grid; */
+  width: 100%;
+}
+.select-btn button {
+  background: linear-gradient(
+    to right,
+    #ff2100,
+    #ff4000,
+    #ff5500,
+    #ff6700,
+    #ff7600
+  );
   border: none;
-  background: #fe5000;
-  border: navajowhite;
-  padding: 8px 30px;
+  padding: 6px 30px;
   color: #fff;
   font-weight: 600;
-  transition: 0.3s;
+  transition: 0.4s;
+  width: 100%;
 }
-.single-approved-class button:hover {
-	background: #171c34;
-	border-radius: 5px;
-	transition: .3s;
+.select-btn:hover button {
+  color: #000;
 }
