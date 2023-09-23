@@ -1,5 +1,6 @@
 /* Font family */
 /* @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 
 .dashboard-sidebar {
   background: #fe5000;
@@ -79,6 +80,25 @@
   font-weight: 600;
   text-transform: uppercase;
   transition: 0.3s;
+}
+/* This is for section title */
+.area-title {
+  text-align: center;
+}
+.area-title h5 {
+  font-size: 30px;
+  color: #fe5000;
+  margin-bottom: 5px;
+  font-family: "Dancing Script", cursive;
+}
+.area-title h2 {
+  font-size: 48px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.area-title span {
+  font-weight: 900;
+  color: #fe5000;
 }
 /* It is for scroll to top */
 .relative {

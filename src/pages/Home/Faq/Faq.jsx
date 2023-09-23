@@ -7,7 +7,7 @@ function Faq() {
     <div className="faq-area">
       <div className="container">
         <div className="area-title" data-aos="flip-up">
-          <p>Faq</p>
+          <h5>Faq</h5>
           <h2>
             Questions? <span>Look Here</span>
           </h2>

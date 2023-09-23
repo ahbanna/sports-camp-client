@@ -11,19 +11,23 @@ const AboutUs = () => {
       <div className="container">
         <div className="about-area-content">
           <div className="about-area-left">
-            <div className="img1">
+            <div className="img1" data-aos="fade-up" data-aos-duration="500">
               <img src={about1} alt="" srcset="" />
             </div>
-            <div className="img2">
+            <div className="img2" data-aos="fade-up" data-aos-duration="600">
               <img src={about2} alt="" srcset="" />
             </div>
-            <div className="img3">
+            <div className="img3" data-aos="fade-up" data-aos-duration="500">
               <img src={about3} alt="" srcset="" />
             </div>
           </div>
-          <div className="about-area-right">
+          <div
+            className="about-area-right"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
             <div className="area-title">
-              <p>About Us</p>
+              <h5>About Us</h5>
               <h2>
                 From the moment you walk through the door you know
                 <span> Sports Camp</span> is a unique place

@@ -8,14 +8,13 @@
 }
 .single-instructor {
   margin-bottom: 35px;
+  text-align: center;
 }
 .single-instructor .card-title {
-  font-size: 22px;
+  color: #fe5000;
+  font-size: 30px;
   font-weight: 700;
-  text-transform: uppercase;
-}
-.single-instructor p {
-  color: #707980;
+  font-family: "Dancing Script", cursive;
 }
 .single-instructor img {
   height: 350px;
@@ -23,12 +22,84 @@
 .single-instructor .card {
   border: none;
 }
-.instructor-area .section-title {
-  text-align: center;
-  padding-bottom: 20px;
+.single-instructor .image {
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-.instructor-area .section-title p {
-  font-size: 20px;
-  font-weight: 500;
-  margin-top: -20px;
+.single-instructor .image::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 0%;
+  background: #ffffff;
+  border-radius: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+.single-instructor .image .content {
+  position: absolute;
+  top: 40%;
+  -webkit-transform: translateY(-40%);
+  transform: translateY(-40%);
+  right: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.single-instructor .image .social {
+  position: absolute;
+  bottom: 35%;
+  -webkit-transform: translateY(-35%);
+  transform: translateY(-35%);
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 1;
+}
+.single-instructor:hover .image::before {
+  height: 100%;
+}
+.single-instructor:hover .image .content {
+  opacity: 1;
+  visibility: visible;
+}
+.single-instructor:hover .image .social li {
+  opacity: 1;
+  visibility: visible;
+}
+.single-instructor .social li a {
+  color: #fe5000;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  border-radius: 30px;
+  display: block;
+  text-align: center;
+  line-height: 35px;
+  transition: 0.5s;
+}
+.single-instructor .social li {
+  transition: all 0.3s ease-in-out 0s;
+  transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+  display: inline-block;
+  margin: 0 3px;
+}
+.single-instructor .social li:hover a {
+  background: #fe5000;
+  color: #fff;
+  transition: 0.5s;
 }

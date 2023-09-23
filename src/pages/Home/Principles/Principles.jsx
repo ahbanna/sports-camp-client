@@ -18,7 +18,7 @@ const Principles = () => {
     <div className="principles-area">
       <div className="principles-area-content container">
         <div className="area-title" data-aos="zoom-in" data-aos-duration="8500">
-          <p>Sports Camp</p>
+          <h5>Sports Camp</h5>
           <h2>
             Our <span>Principles</span>
           </h2>

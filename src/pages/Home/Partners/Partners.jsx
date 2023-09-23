@@ -13,7 +13,7 @@ const Partners = () => {
   return (
     <div className="partners-area">
       <div className="area-title" data-aos="zoom-in-down">
-        <p>partners</p>
+        <h5>Partners</h5>
         <h2>
           Our<span> Sponsorship</span>
         </h2>

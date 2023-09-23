@@ -11,7 +11,7 @@ const Social = () => {
       <div className="social-area-content container">
         <div className="social-left">
           <div className="area-title">
-            <p>Social Media</p>
+            <h5>Social Media</h5>
             <h2>
               Keep Update to Our <span>Social Channel</span>
             </h2>

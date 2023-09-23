@@ -39,7 +39,7 @@ export function Gallery() {
     <div className="gallery-area">
       <div className="container">
         <div className="area-title" data-aos="zoom-in">
-          <p>checkout</p>
+          <h5>Checkout</h5>
           <h2>
             our<span> gallery</span>
           </h2>

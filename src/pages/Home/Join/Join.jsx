@@ -18,7 +18,8 @@ const Join = () => {
     infinite: true,
     centerPadding: "60px",
     slidesToShow: 1,
-    speed: 500,
+    speed: 300,
+    autoplay: true,
   };
 
   return (
@@ -26,7 +27,7 @@ const Join = () => {
       <div className="join-area-content container">
         <div className="join-area-text" data-aos="fade-right">
           <div className="area-title">
-            <p>join today</p>
+            <h5>Join Today</h5>
             <h2>
               Sports camp invites you to <span>classes</span>
             </h2>
