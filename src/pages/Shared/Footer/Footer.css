@@ -127,6 +127,22 @@
     padding-left: 40px;
   }
 }
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .quick-links-area {
+    padding-left: 12px;
+  }
+  .footer-container {
+    text-align: center;
+  }
+  .footer-contact ul {
+    list-style: none;
+    padding: 0;
+    color: #fff;
+    text-align: left;
+  }
+}
+
 @media only screen and (max-width: 576px) {
   .footer-contact {
     padding-left: 0;

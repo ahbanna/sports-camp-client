@@ -235,6 +235,14 @@
   font-family: initial;
 }
 /*MD devcie*/
+@media (max-width: 991px) {
+  .banner-two .banner-content,
+  .banner-three .banner-content,
+  .banner-four .banner-content,
+  .banner-five .banner-content {
+    width: 100%;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .banner-content h2 {
     font-size: 38px;
@@ -243,10 +251,19 @@
   .banner-content p {
     font-size: 16px;
   }
-  .banner-two .banner-content,
-  .banner-three .banner-content,
-  .banner-four .banner-content,
-  .banner-five .banner-content {
-    width: 100%;
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .banner-content h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .banner-content p {
+    font-size: 15px;
+  }
+  .banner-area .slick-prev,
+  .banner-area .slick-next {
+    width: 30px !important;
+    height: 30px !important;
   }
 }

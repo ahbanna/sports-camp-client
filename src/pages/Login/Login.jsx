@@ -52,43 +52,48 @@ const Login = () => {
   return (
     <div className="login-area">
       <PageToBanner title="Login"></PageToBanner>
-      <div className="container w-50 mx-auto">
-        <Slide triggerOnce>
-          <h3 className="main-heading">Please Login!</h3>
-        </Slide>
-
-        <Form onSubmit={handleSubmit(handleLogin)}>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control
-              type="email"
-              placeholder="Enter email"
-              {...register("email", { required: true })}
-            />
-          </Form.Group>
-
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control
-              type="password"
-              placeholder="Password"
-              {...register("password", { required: true })}
-            />
-          </Form.Group>
-          <div className="login-btn">
-            <Button variant="primary" type="submit">
-              Login
-            </Button>
+      <div className="login-area-content">
+        <div className="container w-50 mx-auto">
+          <div className="area-title" data-aos="zoom-in">
+            <h5>Welcome</h5>
+            <h2>
+              Please <span>Login</span>
+            </h2>
           </div>
-          <div>
-            <Form.Text>
-              Don't have an account? <Link to="/register">Register</Link>
-            </Form.Text>
-            <p className="text-success"></p>
-            <p className="error-msg"></p>
-          </div>
-        </Form>
-        <SocialLogin></SocialLogin>
+
+          <Form onSubmit={handleSubmit(handleLogin)}>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="Enter email"
+                {...register("email", { required: true })}
+              />
+            </Form.Group>
+
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>Password</Form.Label>
+              <Form.Control
+                type="password"
+                placeholder="Password"
+                {...register("password", { required: true })}
+              />
+            </Form.Group>
+            <div className="login-btn">
+              <Button variant="primary" type="submit">
+                Login
+              </Button>
+            </div>
+            <div>
+              <Form.Text>
+                Don't have an account? <Link to="/register">Register</Link>
+              </Form.Text>
+              <p className="text-success"></p>
+              <p className="error-msg"></p>
+            </div>
+          </Form>
+          <SocialLogin></SocialLogin>
+        </div>
       </div>
     </div>
   );

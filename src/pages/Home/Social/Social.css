@@ -98,3 +98,19 @@
   bottom: 67px;
   left: 55px;
 }
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .social-area-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .social-link ul {
+    justify-content: center;
+  }
+  .social-area .custom-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .social-left .area-title {
+    text-align: center;
+  }
+}

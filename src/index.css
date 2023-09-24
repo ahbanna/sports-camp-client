@@ -133,6 +133,12 @@ body.dark-theme {
   color: var(--text-color-dark);
 }
 
+/* Responsive */
+@media (max-width: 767px) {
+  .area-title {
+    text-align: center;
+  }
+}
 /*MD devcie*/
 @media (min-width: 768px) and (max-width: 991px) {
   .area-title h5 {
@@ -143,5 +149,14 @@ body.dark-theme {
   }
   .area-title h2 {
     font-size: 40px;
+  }
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .area-title h2 {
+    font-size: 35px;
+  }
+  .area-title h5 {
+    font-size: 22px;
   }
 }

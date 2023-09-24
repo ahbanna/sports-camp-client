@@ -4,10 +4,10 @@
 .login-area .container {
   border: 1px solid #ff4646;
   padding: 20px 50px;
+  border-radius: 10px;
 }
-.login-area .main-heading {
-  font-size: 60px;
-  text-align: center;
+.login-area-content {
+  padding: 40px 0;
 }
 .login-area p {
   letter-spacing: 8px;
@@ -41,4 +41,15 @@
 }
 .login-area small {
   font-weight: 700;
+}
+.login-area .breadcrumbs-area {
+  min-height: 270px;
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .login-area .area-title h2 {
+    font-size: 31px;
+  }
+  .login-area .area-title {
+    padding: 0;
+  }
 }

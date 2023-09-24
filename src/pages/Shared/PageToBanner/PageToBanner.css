@@ -37,3 +37,20 @@
   margin-right: 5px;
   font-size: 20px;
 }
+/*SM Device*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .breadcrumbs-area {
+    min-height: 280px;
+  }
+  .breadcrumbs-area h3 {
+    font-size: 48px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .breadcrumbs-area {
+    min-height: 220px;
+  }
+  .breadcrumbs-area h3 {
+    font-size: 38px;
+  }
+}

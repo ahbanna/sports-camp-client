@@ -33,3 +33,15 @@
     padding: 25px 0;
   }
 }
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .partners-area {
+    padding: 25px 0;
+  }
+  .partners-content {
+    margin-top: 10px;
+  }
+  .partners-area img {
+    height: 30px;
+  }
+}

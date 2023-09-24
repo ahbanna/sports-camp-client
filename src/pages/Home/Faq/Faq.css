@@ -31,14 +31,17 @@
 .accordion-button:not(.collapsed) {
   background-color: #f9f9f9;
 }
-/*MD devcie*/
-@media (min-width: 768px) and (max-width: 991px) {
-  .faq-area {
-    padding: 20px 0;
-  }
+/* Responsive */
+@media (max-width: 991px) {
   .faq-content {
     grid-template-columns: repeat(1, 1fr);
   }
+  .faq-area {
+    padding: 20px 0;
+  }
+}
+/*MD devcie*/
+@media (min-width: 768px) and (max-width: 991px) {
   .faq-img {
     text-align: center;
   }
@@ -48,4 +51,7 @@
   .accordion-button {
     font-size: 16px;
   }
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
 }

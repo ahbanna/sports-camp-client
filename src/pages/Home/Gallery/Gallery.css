@@ -64,3 +64,9 @@
 .lg-react-element a:hover::before {
   opacity: 0.3;
 }
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .gallery-area {
+    padding: 20px 0;
+  }
+}

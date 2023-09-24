@@ -70,3 +70,38 @@
     right: 39%;
   }
 }
+
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .join-area {
+    padding: 20px 0;
+    min-height: 850px;
+  }
+  .join-area-text {
+    width: 100%;
+  }
+  .join-area-slider {
+    width: 100%;
+    top: unset;
+    bottom: unset;
+    margin-bottom: 75px;
+    padding: 20px;
+  }
+  .join-area .slick-arrow.slick-next {
+    right: 39%;
+  }
+  .join-area .slick-arrow.slick-next {
+    top: 53%;
+  }
+  .join-area .slick-arrow.slick-prev {
+    top: 53% !important;
+  }
+  .join-area .custom-btn {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .join-area .area-title {
+    text-align: center;
+  }
+}

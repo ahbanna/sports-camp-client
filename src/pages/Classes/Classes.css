@@ -91,3 +91,16 @@
     height: 250px;
   }
 }
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .all-approved-class {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  .single-approved-class img {
+    height: 220px;
+  }
+  .single-approved-class .card {
+    width: 15.5rem !important;
+  }
+}

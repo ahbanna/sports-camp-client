@@ -68,6 +68,20 @@
     padding: 0 0 15px 0;
   }
 }
+/* SM decices */
+.about-area-content {
+  grid-template-columns: repeat(1, 1fr);
+}
+.about-area .area-title h2 {
+  font-size: 24px;
+}
+.short-features {
+  padding: 0 0 15px 0;
+}
+.about-area-right {
+  padding: 0;
+}
+/*  */
 @media only screen and (max-width: 576px) {
   .about-img {
     background-size: 100% 100%;
