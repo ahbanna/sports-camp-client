@@ -23,7 +23,7 @@
   position: absolute;
   width: 320px;
   /* height: 255px; */
-  bottom: -3%;
+  bottom: 2%;
   left: 17%;
 }
 .about-area .area-title {
@@ -34,7 +34,7 @@
   text-transform: inherit;
 }
 .about-area-right {
-  padding: 50px 20px;
+  padding: 0 20px 020px;
 }
 .about-area .custom-btn button::before {
   width: 100%;
@@ -49,7 +49,7 @@
 .short-features {
   display: flex;
   justify-content: space-between;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 .short-features h5 {
   font-weight: 600;
@@ -58,31 +58,70 @@
   margin-bottom: 6px;
   letter-spacing: 2px;
 }
-
+/* Large devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-area {
+    padding: 80px 0 60px 0;
+  }
+  .img3 {
+    bottom: 16%;
+  }
+  .about-area .area-title h2 {
+    font-size: 24px;
+  }
+  .short-features {
+    padding: 20px 0;
+  }
+}
 /*MD devcie*/
 @media (min-width: 768px) and (max-width: 991px) {
+  .about-area {
+    padding: 60px 0;
+  }
   .about-area-content {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .img3 {
+    bottom: -37%;
+  }
+  .about-area-right {
+    padding: 160px 20px 0 20px;
   }
   .short-features {
     padding: 0 0 15px 0;
   }
 }
 /* SM decices */
-.about-area-content {
-  grid-template-columns: repeat(1, 1fr);
+@media (min-width: 576px) and (max-width: 767px) {
+  .about-area {
+    padding: 60px 0 40px 0;
+  }
+  /* .about-area .area-title {
+    text-align: center;
+  } */
+  .img3 {
+    bottom: -37%;
+  }
+  .about-area-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-area .area-title h2 {
+    font-size: 24px;
+  }
+  .short-features {
+    padding: 15px 0;
+  }
+  .about-area-right {
+    padding-top: 115px;
+  }
+  /* .custom-btn {
+    width: 100%;
+    text-align: center;
+  } */
 }
-.about-area .area-title h2 {
-  font-size: 24px;
-}
-.short-features {
-  padding: 0 0 15px 0;
-}
-.about-area-right {
-  padding: 0;
-}
+
 /*  */
-@media only screen and (max-width: 576px) {
+/* @media only screen and (max-width: 576px) {
   .about-img {
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -103,5 +142,28 @@
   }
   .banner-section .container {
     padding: 20px 0;
+  }
+  .about-area .custom-btn {
+    width: 100%;
+    text-align: center;
+  }
+} */
+/* Mobile device */
+@media only screen and (max-width: 576px) {
+  .about-area {
+    padding: 60px 0 40px 0;
+  }
+  .about-area-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-area-left .img3 {
+    display: none;
+  }
+  .about-area .custom-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .short-features {
+    padding: 15px 0;
   }
 }

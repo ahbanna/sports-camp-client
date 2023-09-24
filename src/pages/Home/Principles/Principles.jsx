@@ -35,9 +35,8 @@ const Principles = () => {
                 <Card.Title>Proficiency</Card.Title>
                 <Card.Text>
                   We provide expert coaching and guidance to help participants
-                  enhance their proficiency in their chosen sports. Through
-                  focused training, drills, and practice, participants develop
-                  the skills.
+                  enhance their proficiency in sports. Through
+                  focused training, drills, and practice, participants develop skills.
                 </Card.Text>
               </Card.Body>
             </Card>

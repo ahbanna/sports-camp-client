@@ -160,3 +160,15 @@ body.dark-theme {
     font-size: 22px;
   }
 }
+/* Mobile device */
+@media (max-width: 575px) {
+  .area-title h2 {
+    font-size: 30px;
+  }
+  .area-title h5 {
+    font-size: 20px;
+  }
+  .all-principles {
+    padding: 20px 0;
+  }
+}

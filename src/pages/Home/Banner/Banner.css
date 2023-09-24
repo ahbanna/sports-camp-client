@@ -234,7 +234,7 @@
   font-weight: 900;
   font-family: initial;
 }
-/*MD devcie*/
+/*Responsive*/
 @media (max-width: 991px) {
   .banner-two .banner-content,
   .banner-three .banner-content,
@@ -243,6 +243,7 @@
     width: 100%;
   }
 }
+/* MD devices */
 @media (min-width: 768px) and (max-width: 991px) {
   .banner-content h2 {
     font-size: 38px;
@@ -266,4 +267,18 @@
     width: 30px !important;
     height: 30px !important;
   }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .banner-content h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .banner-one .banner-content p {
+    width: 100%;
+  }
+  .banner-content p {
+    font-size: 15px;
+  }
+  
 }

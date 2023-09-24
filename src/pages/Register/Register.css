@@ -45,6 +45,13 @@
 .register-area .breadcrumbs-area {
   min-height: 270px;
 }
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .register-area .container {
+    padding: 20px;
+  }
+}
+/* SM devices */
 @media (min-width: 576px) and (max-width: 767px) {
   .register-area .container {
     padding: 20px;

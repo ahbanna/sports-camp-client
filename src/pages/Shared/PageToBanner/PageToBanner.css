@@ -48,7 +48,7 @@
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .breadcrumbs-area {
-    min-height: 220px;
+    min-height: 200px !important;
   }
   .breadcrumbs-area h3 {
     font-size: 38px;
