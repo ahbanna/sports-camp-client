@@ -48,3 +48,25 @@
   color: #fff !important;
   font-family: unset !important;
 }
+/*MD devcie*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .join-area {
+    padding: 20px 0;
+    min-height: 850px;
+  }
+  .join-area-text {
+    width: 100%;
+  }
+  .join-area-slider {
+    width: 100%;
+    top: unset;
+    bottom: 0;
+    margin-bottom: 75px;
+  }
+  .join-area .custom-btn {
+    margin-top: 10px;
+  }
+  .join-area .slick-arrow.slick-next {
+    right: 39%;
+  }
+}

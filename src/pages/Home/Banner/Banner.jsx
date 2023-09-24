@@ -179,7 +179,6 @@ import "./Banner.css";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Typewriter from "react-ts-typewriter";
 
 const Banner = () => {
   var settings = {
@@ -199,18 +198,6 @@ const Banner = () => {
       <Slider {...settings}>
         <div className="banner-one banner-bg" data-aos="flip-up">
           <div className="banner-content container">
-            {/* <h1 className="type-msg">
-              <Typewriter
-                text="Football"
-                loop={true}
-                speed={100}
-                random={200}
-                style={{
-                  whiteSpace: "pre",
-                }}
-              />
-            </h1> */}
-
             <h2 data-aos="fade-down" data-aos-duration="1500">
               Step onto the Field of <span>Football</span>
             </h2>
@@ -230,7 +217,6 @@ const Banner = () => {
             </div>
           </div>
         </div>
-
         <div className="banner-two banner-bg" data-aos="zoom-in-up">
           <div className="banner-content container">
             <h2>

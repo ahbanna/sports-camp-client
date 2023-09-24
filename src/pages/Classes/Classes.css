@@ -27,6 +27,11 @@
 }
 .single-approved-class img {
   height: 270px;
+  transition: transform 0.3s;
+}
+.single-approved-class:hover img {
+  transform: scale(1.1);
+  overflow: hidden;
 }
 .rating-star svg {
   stroke: #fe5000 !important;
@@ -72,4 +77,17 @@
 }
 .select-btn:hover button {
   color: #000;
+}
+
+.single-approved-class .card {
+  overflow: hidden;
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .all-approved-class {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .single-approved-class img {
+    height: 250px;
+  }
 }

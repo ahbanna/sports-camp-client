@@ -123,12 +123,25 @@
 }
 
 body {
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
   color: var(--text-color);
-  background-color: #f9f9f9;
+  /* background-color: red !important; */
 }
 
 body.dark-theme {
   background-color: var(--bg-color-dark);
   color: var(--text-color-dark);
+}
+
+/*MD devcie*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .area-title h5 {
+    font-size: 24px;
+  }
+  .area-title {
+    padding: 10px 0;
+  }
+  .area-title h2 {
+    font-size: 40px;
+  }
 }

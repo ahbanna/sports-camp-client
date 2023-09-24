@@ -108,3 +108,16 @@
   color: #fff;
   transition: 0.5s;
 }
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .breadcrumbs-area {
+    min-height: 280px;
+  }
+  .all-instructor {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .single-instructor .image {
+    width: 100% !important;
+  }
+}

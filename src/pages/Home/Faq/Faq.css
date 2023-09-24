@@ -31,3 +31,21 @@
 .accordion-button:not(.collapsed) {
   background-color: #f9f9f9;
 }
+/*MD devcie*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .faq-area {
+    padding: 20px 0;
+  }
+  .faq-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .faq-img {
+    text-align: center;
+  }
+  .faq-img img {
+    width: 75%;
+  }
+  .accordion-button {
+    font-size: 16px;
+  }
+}

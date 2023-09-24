@@ -26,7 +26,7 @@ const Footer = () => {
       <div className="footer-container" data-aos="zoom-in-up">
         <div className="container">
           <div className="row">
-            <div className="col-lg-3">
+            <div className="col-lg-3 col-md-6">
               <h3>About Sports Camp</h3>
               <p>
                 Enhance skills, teamwork & sportsmanship! Join a program led by
@@ -35,7 +35,7 @@ const Footer = () => {
                 sports.
               </p>
             </div>
-            <div className="col-lg-3 quick-links-area">
+            <div className="col-lg-3 col-md-6 quick-links-area">
               <div className="quick-links">
                 <h3>Quick Links</h3>
                 <ul>
@@ -79,7 +79,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 col-md-6">
               <div className="footer-contact">
                 <h3>Location & Hours</h3>
                 <ul>
@@ -116,7 +116,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-3 footer-subscribe">
+            <div className="col-lg-3 col-md-6 footer-subscribe">
               <h3>Newsletter</h3>
               <p>Enter your email and get latest updates</p>
               <form action="">
@@ -126,9 +126,7 @@ const Footer = () => {
                   id=""
                   placeholder="Enter Your Email"
                 />
-                <div
-                  className="subscribe-btn custom-btn"
-                >
+                <div className="subscribe-btn custom-btn">
                   <button>
                     <input type="submit" value="Subscribe Now" />
                   </button>

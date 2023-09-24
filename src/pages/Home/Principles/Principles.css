@@ -55,3 +55,13 @@
 .single-principle .card-text {
   color: #717171;
 }
+/*MD devcie*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .principles-area {
+    padding: 20px 0;
+  }
+  .all-principles {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 0;
+  }
+}

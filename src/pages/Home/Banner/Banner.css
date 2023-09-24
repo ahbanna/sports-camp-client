@@ -234,3 +234,19 @@
   font-weight: 900;
   font-family: initial;
 }
+/*MD devcie*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-content h2 {
+    font-size: 38px;
+    line-height: 45px;
+  }
+  .banner-content p {
+    font-size: 16px;
+  }
+  .banner-two .banner-content,
+  .banner-three .banner-content,
+  .banner-four .banner-content,
+  .banner-five .banner-content {
+    width: 100%;
+  }
+}

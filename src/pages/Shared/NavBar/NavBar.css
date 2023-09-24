@@ -35,3 +35,15 @@ p.user-name {
   color: #fff;
   font-weight: 600;
 }
+/*MD devcie*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-collapse {
+    text-align: center;
+    /* background: #000; */
+  }
+  .react-switch.react-switch-docusaurus {
+    text-align: end;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}

@@ -8,6 +8,7 @@ import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
 import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 import { Slide } from "react-awesome-reveal";
+import PageToBanner from "../Shared/PageToBanner/PageToBanner";
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
@@ -50,6 +51,7 @@ const Login = () => {
   };
   return (
     <div className="login-area">
+      <PageToBanner title="Login"></PageToBanner>
       <div className="container w-50 mx-auto">
         <Slide triggerOnce>
           <h3 className="main-heading">Please Login!</h3>

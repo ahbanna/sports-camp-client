@@ -58,6 +58,16 @@
   margin-bottom: 6px;
   letter-spacing: 2px;
 }
+
+/*MD devcie*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-area-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .short-features {
+    padding: 0 0 15px 0;
+  }
+}
 @media only screen and (max-width: 576px) {
   .about-img {
     background-size: 100% 100%;
