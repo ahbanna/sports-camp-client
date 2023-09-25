@@ -16,7 +16,7 @@
 //   useEffect(() => {
 //     console.log(price);
 //     axiosSecure
-//       .post("http://localhost:5000/create-payment-intent", { price })
+//       .post("https://sports-camp-server-unqt1ouq2-ahbanna.vercel.app/create-payment-intent", { price })
 //       .then((res) => {
 //         console.log(res.data.clientSecret);
 //         setClientSecret(res.data.clientSecret);
@@ -33,7 +33,7 @@
 
 //   // useEffect(() => {
 //   //   fetch(
-//   //     "http://localhost:5000/create-payment-intent",
+//   //     "https://sports-camp-server-unqt1ouq2-ahbanna.vercel.app/create-payment-intent",
 //   //     {
 //   //       method: "POST",
 //   //       headers: {
@@ -180,7 +180,10 @@ const CheckoutForm = ({
     );
     if (price > 0) {
       axiosSecure
-        .post("http://localhost:5000/create-payment-intent", { price })
+        .post(
+          "https://sports-camp-server-unqt1ouq2-ahbanna.vercel.app/create-payment-intent",
+          { price }
+        )
         .then((res) => {
           console.log(res.data.clientSecret);
           setClientSecret(res.data.clientSecret);
@@ -254,7 +257,10 @@ const CheckoutForm = ({
         date: new Date(),
       };
       axiosSecure
-        .post("http://localhost:5000/payments", payment)
+        .post(
+          "https://sports-camp-server-unqt1ouq2-ahbanna.vercel.app/payments",
+          payment
+        )
         .then((res) => {
           console.log(res.data);
           if (res.data.insertedId) {

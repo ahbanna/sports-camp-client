@@ -17,7 +17,7 @@ const ClassFind = () => {
           data-aos-duration="500"
         >
           <button>
-            <Link to="/">Find a class for me</Link>
+            <Link to="/classes">Find a class for me</Link>
           </button>
         </div>
       </div>

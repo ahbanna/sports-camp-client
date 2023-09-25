@@ -11,7 +11,7 @@
 //   const [instructors, setInstructors] = useState([]);
 
 //   useEffect(() => {
-//     fetch("http://localhost:5000/users")
+//     fetch("https://sports-camp-server-unqt1ouq2-ahbanna.vercel.app/users")
 //       .then((res) => res.json())
 //       .then((data) => {
 //         const popularInstructors = data.filter(
@@ -68,7 +68,7 @@ const Instructors = () => {
   const [instructors, setInstructors] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/users")
+    fetch("https://sports-camp-server-unqt1ouq2-ahbanna.vercel.app/users")
       .then((res) => res.json())
       .then((data) => {
         const popularInstructors = data.filter(

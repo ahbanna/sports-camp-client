@@ -20,15 +20,16 @@ import lgRotate from "lightgallery/plugins/rotate";
 import { Slide } from "react-awesome-reveal";
 
 const galleryImages = [
-  { src: "/src/assets/gallery/1.jpg", alt: "Zip Line" },
-  { src: "/src/assets/gallery/2.png", alt: "Karate" },
-  { src: "/src/assets/gallery/3.jpg", alt: "Football" },
-  { src: "/src/assets/gallery/4.jpg", alt: "Tennis" },
-  { src: "/src/assets/gallery/5.jpg", alt: "Football" },
-  { src: "/src/assets/gallery/6.jpg", alt: "Swimming" },
-  { src: "/src/assets/gallery/7.jpg", alt: "Boxing" },
-  { src: "/src/assets/gallery/8.jpg", alt: "Football" },
-  { src: "/src/assets/gallery/9.png", alt: "Cycling" },
+  { src: "https://i.ibb.co/swRY7qz/1.jpg", alt: "Zip Line" },
+  { src: "https://i.ibb.co/YfN72TY/2.png", alt: "Karate" },
+  { src: "https://i.ibb.co/fQNYgsp/3.jpg", alt: "Football" },
+  { src: "https://i.ibb.co/4Yz7Hn2/4.jpg", alt: "Boxing" },
+  { src: "https://i.ibb.co/hLSMsD4/5.jpg", alt: "Skiing" },
+  { src: "https://i.ibb.co/JCd2szD/6.jpg", alt: "Swimming" },
+  { src: "https://i.ibb.co/VQvTXQg/7.jpg", alt: "Badminton" },
+  { src: "https://i.ibb.co/59nyq2g/8.jpg", alt: "Football" },
+  { src: "https://i.ibb.co/5TT8dGg/9.png", alt: "Cycling" },
+  // { src: "/src/assets/gallery/9.png", alt: "Cycling" },
 ];
 
 export function Gallery() {

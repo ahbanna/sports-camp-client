@@ -9,7 +9,7 @@ const MyClasses = () => {
   useTitle("My Classes");
   const { user } = useContext(AuthContext);
   const [myClasses, setMyClasses] = useState([]);
-  const url = `http://localhost:5000/myclasses?email=${user?.email}`;
+  const url = `https://sports-camp-server-unqt1ouq2-ahbanna.vercel.app/myclasses?email=${user?.email}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())

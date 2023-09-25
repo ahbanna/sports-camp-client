@@ -14,7 +14,7 @@ const SelectedClasses = () => {
   const navigate = useNavigate();
   // payment end
   const [selectedclass, setSelectedclass] = useState([]);
-  const url = `http://localhost:5000/selectedclasses?userEmail=${user?.email}`;
+  const url = `https://sports-camp-server-unqt1ouq2-ahbanna.vercel.app/selectedclasses?userEmail=${user?.email}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -37,9 +37,12 @@ const SelectedClasses = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/selectedclasses/${_id}`, {
-          method: "DELETE",
-        })
+        fetch(
+          `https://sports-camp-server-unqt1ouq2-ahbanna.vercel.app/selectedclasses/${_id}`,
+          {
+            method: "DELETE",
+          }
+        )
           .then((res) => res.json())
           .then((data) => {
             console.log(data);

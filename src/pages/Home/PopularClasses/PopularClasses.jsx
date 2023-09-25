@@ -6,7 +6,7 @@ const PopularClasses = () => {
   const [popularClasses, setPopularClasses] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/allclasses")
+    fetch("https://sports-camp-server-unqt1ouq2-ahbanna.vercel.app/allclasses")
       .then((res) => res.json())
       .then((data) => {
         const slicedData = data.slice(0, 6);

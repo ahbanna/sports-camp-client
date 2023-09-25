@@ -6,7 +6,7 @@ import { AuthContext } from "../providers/AuthProvider";
 // import useAuth from "./useAuth";
 
 const axiosSecure = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "https://sports-camp-server-unqt1ouq2-ahbanna.vercel.app",
 });
 
 const useAxiosSecure = () => {
@@ -16,7 +16,7 @@ const useAxiosSecure = () => {
   const navigate = useNavigate();
 
   // const axiosSecure = axios.create({
-  //   baseURL: "http://localhost:5000",
+  //   baseURL: "https://sports-camp-server-unqt1ouq2-ahbanna.vercel.app",
   // });
 
   useEffect(() => {

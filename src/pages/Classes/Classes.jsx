@@ -15,7 +15,7 @@
 //   // console.log(user.email);
 
 //   useEffect(() => {
-//     fetch("http://localhost:5000/allclasses")
+//     fetch("https://sports-camp-server-unqt1ouq2-ahbanna.vercel.app/allclasses")
 //       .then((res) => res.json())
 //       .then((data) => {
 //         const approvedClasses = data.filter(
@@ -32,7 +32,7 @@
 //     };
 //     delete dataToSend._id;
 //     axios
-//       .post("http://localhost:5000/selectedclasses", dataToSend)
+//       .post("https://sports-camp-server-unqt1ouq2-ahbanna.vercel.app/selectedclasses", dataToSend)
 //       .then((res) => {
 //         console.log(res.data);
 //         if (res.data.insertedId) {
@@ -116,7 +116,7 @@ const Classes = () => {
   // console.log(user.email);
 
   useEffect(() => {
-    fetch("http://localhost:5000/allclasses")
+    fetch("https://sports-camp-server-unqt1ouq2-ahbanna.vercel.app/allclasses")
       .then((res) => res.json())
       .then((data) => {
         const approvedClasses = data.filter(
@@ -133,7 +133,10 @@ const Classes = () => {
     };
     delete dataToSend._id;
     axios
-      .post("http://localhost:5000/selectedclasses", dataToSend)
+      .post(
+        "https://sports-camp-server-unqt1ouq2-ahbanna.vercel.app/selectedclasses",
+        dataToSend
+      )
       .then((res) => {
         console.log(res.data);
         if (res.data.insertedId) {

@@ -9,7 +9,9 @@ const PaymentHistory = () => {
   const { user } = useContext(AuthContext);
   const [history, setHistory] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/payments?userEmail=${user?.email}`)
+    fetch(
+      `https://sports-camp-server-unqt1ouq2-ahbanna.vercel.app/payments?userEmail=${user?.email}`
+    )
       .then((res) => res.json())
       .then((data) => {
         // apply sorting

@@ -8,7 +8,7 @@
 // const ManageClasses = () => {
 //   const { data: classes = [], refetch } = useQuery(["classes"], async () => {
 //     const res = await fetch(
-//       "http://localhost:5000/allclasses"
+//       "https://sports-camp-server-unqt1ouq2-ahbanna.vercel.app/allclasses"
 //     );
 //     return res.json();
 //   });
@@ -16,7 +16,7 @@
 //   // Manage class approve or denay
 //   const handleMakeStatus = (classId, status) => {
 //     fetch(
-//       `http://localhost:5000/allclasses/${status}/${classId}`,
+//       `https://sports-camp-server-unqt1ouq2-ahbanna.vercel.app/allclasses/${status}/${classId}`,
 //       {
 //         method: "PATCH",
 //       }
@@ -102,15 +102,20 @@ import { Slide } from "react-awesome-reveal";
 const ManageClasses = () => {
   const [showModal, setShowModal] = useState(false);
   const { data: classes = [], refetch } = useQuery(["classes"], async () => {
-    const res = await fetch("http://localhost:5000/allclasses");
+    const res = await fetch(
+      "https://sports-camp-server-unqt1ouq2-ahbanna.vercel.app/allclasses"
+    );
     return res.json();
   });
 
   // Manage class approve or denay
   const handleMakeStatus = (classId, status) => {
-    fetch(`http://localhost:5000/allclasses/${status}/${classId}`, {
-      method: "PATCH",
-    })
+    fetch(
+      `https://sports-camp-server-unqt1ouq2-ahbanna.vercel.app/allclasses/${status}/${classId}`,
+      {
+        method: "PATCH",
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         if (data.modifiedCount) {
