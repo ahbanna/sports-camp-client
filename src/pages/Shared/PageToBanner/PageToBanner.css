@@ -54,3 +54,12 @@
     font-size: 38px;
   }
 }
+/* Mobile device */
+@media (max-width: 575px) {
+  .breadcrumbs-area {
+    min-height: 200px !important;
+  }
+  .breadcrumbs-area h3 {
+    font-size: 28px;
+  }
+}

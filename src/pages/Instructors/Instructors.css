@@ -27,12 +27,12 @@
 .single-instructor .card {
   border: none;
 }
-.single-instructor .image {
+.single-instructor .ins-image {
   position: relative;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.single-instructor .image::before {
+.single-instructor .ins-image::before {
   content: "";
   position: absolute;
   left: 0;
@@ -47,7 +47,7 @@
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
 }
-.single-instructor .image .content {
+.single-instructor .ins-image .content {
   position: absolute;
   top: 40%;
   -webkit-transform: translateY(-40%);
@@ -60,7 +60,7 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.single-instructor .image .social {
+.single-instructor .ins-image .social {
   position: absolute;
   bottom: 35%;
   -webkit-transform: translateY(-35%);
@@ -72,14 +72,14 @@
   list-style: none;
   z-index: 1;
 }
-.single-instructor:hover .image::before {
+.single-instructor:hover .ins-image::before {
   height: 100%;
 }
-.single-instructor:hover .image .content {
+.single-instructor:hover .ins-image .content {
   opacity: 1;
   visibility: visible;
 }
-.single-instructor:hover .image .social li {
+.single-instructor:hover .ins-image .social li {
   opacity: 1;
   visibility: visible;
 }
@@ -108,8 +108,20 @@
   color: #fff;
   transition: 0.5s;
 }
-/* Responsive */
-@media (max-width: 991px) {
+/* Extra Large / Desktop device */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .single-instructor .card {
+    width: 21rem !important;
+  }
+}
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .single-instructor .card {
+    width: 18rem !important;
+  }
+  .single-instructor {
+    margin-bottom: 20px;
+  }
 }
 /* MD device */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -117,16 +129,34 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
-  .single-instructor .image {
+  .single-instructor {
+    margin-bottom: 0px;
+  }
+  .single-instructor .ins-image {
     width: 100% !important;
   }
 }
+/* SM devices */
 @media (min-width: 576px) and (max-width: 767px) {
   .all-instructor {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
   }
-  .single-instructor .image {
+  .single-instructor .ins-image {
     width: 100% !important;
+  }
+  .single-instructor {
+    margin-bottom: 0px;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .all-instructor {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+  }
+  .single-instructor {
+    margin-bottom: 0px;
   }
 }

@@ -6,7 +6,7 @@
 }
 .register-area .container {
   border: 1px solid #ff4646;
-  padding: 20px 50px;
+  padding: 20px 50px 40px 50px;
   border-radius: 10px;
 }
 .register-area p {
@@ -45,15 +45,31 @@
 .register-area .breadcrumbs-area {
   min-height: 270px;
 }
+
 /* MD device */
 @media (min-width: 768px) and (max-width: 991px) {
   .register-area .container {
-    padding: 20px;
+    padding: 20px 20px 30px 20px;
   }
 }
 /* SM devices */
 @media (min-width: 576px) and (max-width: 767px) {
+  .register-area .area-title h2 {
+    font-size: 31px;
+  }
+  .register-area .area-title {
+    padding: 0;
+  }
   .register-area .container {
-    padding: 20px;
+    padding: 20px 20px 30px 20px;
+  }
+}
+/* Mobile devices */
+@media (max-width: 575px) {
+  .register-area .container {
+    padding: 20px 10px;
+  }
+  .register-area button {
+    font-size: 13px;
   }
 }

@@ -147,7 +147,7 @@ const Instructors = () => {
         >
           {instructors.map((Instructor) => (
             <div className="single-instructor">
-              <Card style={{ width: "25rem" }} className="image">
+              <Card style={{ width: "25rem" }} className="ins-image">
                 <Card.Img variant="top" src={Instructor.photo} />
                 <div className="content">
                   <Card.Body className="text-center">

@@ -166,8 +166,8 @@ const Register = () => {
                 Already have an account? <Link to="/login">Login</Link>
               </Form.Text>
             </div>
-            <SocialLogin></SocialLogin>
           </Form>
+          <SocialLogin></SocialLogin>
         </div>
       </div>
     </div>

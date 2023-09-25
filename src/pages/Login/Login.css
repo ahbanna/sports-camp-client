@@ -3,7 +3,7 @@
 }
 .login-area .container {
   border: 1px solid #ff4646;
-  padding: 20px 50px;
+  padding: 20px 50px 40px 50px;
   border-radius: 10px;
 }
 .login-area-content {
@@ -45,11 +45,30 @@
 .login-area .breadcrumbs-area {
   min-height: 270px;
 }
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .login-area .container {
+    padding: 20px 20px 30px 20px;
+  }
+}
+/* SM devices */
 @media (min-width: 576px) and (max-width: 767px) {
   .login-area .area-title h2 {
     font-size: 31px;
   }
   .login-area .area-title {
     padding: 0;
+  }
+  .login-area .container {
+    padding: 20px 20px 30px 20px;
+  }
+}
+/* Mobile devices */
+@media (max-width: 575px) {
+  .login-area .container {
+    padding: 20px 10px;
+  }
+  .login-area button {
+    font-size: 13px;
   }
 }

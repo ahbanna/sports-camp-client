@@ -29,20 +29,20 @@ const Principles = () => {
             data-aos="fade-right"
             data-aos-duration="6500"
           >
-            <Card style={{ width: "20rem" }}>
+            <Card style={{ width: "19rem" }}>
               <Card.Body>
                 <AiOutlineLineChart></AiOutlineLineChart>
                 <Card.Title>Proficiency</Card.Title>
                 <Card.Text>
                   We provide expert coaching and guidance to help participants
-                  enhance their proficiency in sports. Through
-                  focused training, drills, and practice, participants develop skills.
+                  enhance their proficiency in sports. Through focused training,
+                  drills, and practice, participants develop skills.
                 </Card.Text>
               </Card.Body>
             </Card>
           </div>
           <div className="single-principle" data-aos="fade-up">
-            <Card style={{ width: "20rem" }}>
+            <Card style={{ width: "19rem" }}>
               <Card.Body>
                 <FaShareAlt></FaShareAlt>
                 <Card.Title>Participation</Card.Title>
@@ -55,7 +55,7 @@ const Principles = () => {
             </Card>
           </div>
           <div className="single-principle" data-aos="fade-up">
-            <Card style={{ width: "20rem" }}>
+            <Card style={{ width: "19rem" }}>
               <Card.Body>
                 <MdSportsBaseball></MdSportsBaseball>
                 <Card.Title>Lessons</Card.Title>
@@ -72,7 +72,7 @@ const Principles = () => {
             data-aos="fade-left"
             data-aos-duration="8500"
           >
-            <Card style={{ width: "20rem" }}>
+            <Card style={{ width: "19rem" }}>
               <Card.Body>
                 <FiUsers></FiUsers>
                 <Card.Title>Teamwork</Card.Title>

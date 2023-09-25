@@ -37,6 +37,12 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+/* Extra large / Desktop */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .faq-content {
+    align-items: center;
+  }
+}
 /* Large device */
 @media (min-width: 992px) and (max-width: 1199px) {
   .faq-area {

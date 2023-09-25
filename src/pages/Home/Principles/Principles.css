@@ -55,6 +55,13 @@
 .single-principle .card-text {
   color: #717171;
 }
+/* Extra large / Desktop */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .single-principle .card {
+    width: 16rem !important;
+    min-height: 321px;
+  }
+}
 /* Large devices */
 @media (min-width: 992px) and (max-width: 1199px) {
   .single-principle .card {

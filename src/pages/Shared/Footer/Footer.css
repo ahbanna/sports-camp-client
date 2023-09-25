@@ -147,6 +147,12 @@
   .footer-contact {
     padding-left: 0;
   }
+  .footer-contact ul {
+    list-style: none;
+    padding: 0;
+    color: #fff;
+    text-align: left;
+  }
   .footer-area {
     text-align: center;
   }
