@@ -9,8 +9,10 @@ import Swal from "sweetalert2";
 import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 import { Slide } from "react-awesome-reveal";
 import PageToBanner from "../Shared/PageToBanner/PageToBanner";
+import useTitle from "../../hooks/useTitle";
 
 const Login = () => {
+  useTitle("Login");
   const { signIn } = useContext(AuthContext);
   // navigate starts.it use when user successfully login go to desire page
   const navigate = useNavigate();

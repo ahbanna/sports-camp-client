@@ -2,23 +2,6 @@
   padding: 60px 0;
   background: #eaeaea;
 }
-/* .area-title {
-  text-align: center;
-}
-.area-title p {
-  font-size: 20px;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-}
-.area-title h2 {
-  font-size: 48px;
-  text-transform: uppercase;
-  margin: 20px 0;
-}
-.area-title span {
-  font-weight: 900;
-  color: #fe5000;
-} */
 .all-principles {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

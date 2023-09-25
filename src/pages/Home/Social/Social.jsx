@@ -54,7 +54,9 @@ const Social = () => {
           </div>
           <div className="custom-btn">
             <button>
-              <Link>subscribe now</Link>
+              <Link to="https://www.youtube.com/" target="_blank">
+                subscribe now
+              </Link>
             </button>
           </div>
         </div>

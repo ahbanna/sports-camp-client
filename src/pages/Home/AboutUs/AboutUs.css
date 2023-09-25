@@ -114,40 +114,7 @@
   .about-area-right {
     padding-top: 115px;
   }
-  /* .custom-btn {
-    width: 100%;
-    text-align: center;
-  } */
 }
-
-/*  */
-/* @media only screen and (max-width: 576px) {
-  .about-img {
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-  .about-content h2 {
-    font-size: 34px;
-    line-height: 2rem;
-    text-align: center;
-  }
-  .about-content p {
-    font-size: 16px;
-    text-align: center;
-    color: #fff;
-  }
-  .learn-more-btn {
-    display: flex;
-    justify-content: center;
-  }
-  .banner-section .container {
-    padding: 20px 0;
-  }
-  .about-area .custom-btn {
-    width: 100%;
-    text-align: center;
-  }
-} */
 /* Mobile device */
 @media only screen and (max-width: 576px) {
   .about-area {

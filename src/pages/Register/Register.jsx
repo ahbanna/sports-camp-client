@@ -8,7 +8,9 @@ import Swal from "sweetalert2";
 import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 import { Slide } from "react-awesome-reveal";
 import PageToBanner from "../Shared/PageToBanner/PageToBanner";
+import useTitle from "../../hooks/useTitle";
 const Register = () => {
+  useTitle("Register");
   // TODO reset have to apply
   const { createUser, updateUserProfile } = useContext(AuthContext);
   const navigate = useNavigate();

@@ -3,8 +3,6 @@ import {
   FaTwitter,
   FaBehance,
   FaInstagram,
-  FaDribbble,
-  FaGoogle,
   FaFacebookF,
   FaPhoneAlt,
   FaRegEnvelope,

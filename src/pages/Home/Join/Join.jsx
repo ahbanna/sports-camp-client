@@ -41,7 +41,7 @@ const Join = () => {
           </p>
           <div className="custom-btn">
             <button>
-              <Link>JOIN WITH US</Link>
+              <Link to="/classes">JOIN WITH US</Link>
             </button>
           </div>
         </div>
