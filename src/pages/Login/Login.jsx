@@ -56,7 +56,7 @@ const Login = () => {
       <PageToBanner title="Login"></PageToBanner>
       <div className="login-area-content">
         <div className="container w-50 mx-auto">
-          <div className="area-title" data-aos="zoom-in">
+          <div className="section-title" data-aos="zoom-in">
             <h5>Welcome</h5>
             <h2>
               Please <span>Login</span>

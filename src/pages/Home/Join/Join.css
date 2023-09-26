@@ -19,7 +19,7 @@
 .join-area .custom-btn a {
   color: #000;
 }
-.join-area .area-title {
+.join-area .section-title {
   text-align: left;
 }
 .join-area .custom-btn {
@@ -123,7 +123,7 @@
     width: 100%;
     text-align: center;
   }
-  .join-area .area-title {
+  .join-area .section-title {
     text-align: center;
   }
 }
@@ -144,7 +144,7 @@
     width: 100%;
     text-align: center;
   }
-  .join-area .area-title {
+  .join-area .section-title {
     text-align: center;
   }
 }

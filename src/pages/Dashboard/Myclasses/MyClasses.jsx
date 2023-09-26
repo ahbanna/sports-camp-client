@@ -21,7 +21,7 @@ const MyClasses = () => {
   return (
     <div>
       <Slide triggerOnce>
-        <div className="section-title text-center">
+        <div className="section-title2 text-center">
           <h3 className="main-heading">My Classes</h3>
         </div>
       </Slide>

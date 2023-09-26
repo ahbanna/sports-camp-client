@@ -11,6 +11,7 @@ import Social from "../Social/Social";
 import Faq from "../Faq/Faq";
 import Partners from "../Partners/Partners";
 import ClassFind from "../ClassFind/ClassFind";
+import SportsCategories from "../SportsCategories/SportsCategories";
 
 const Home = () => {
   useTitle("Home");
@@ -20,6 +21,7 @@ const Home = () => {
       <AboutUs></AboutUs>
       {/* <PopularInstructors></PopularInstructors> */}
       {/* <PopularClasses></PopularClasses> */}
+      <SportsCategories></SportsCategories>
       <Gallery></Gallery>
       <Principles></Principles>
       <Social></Social>

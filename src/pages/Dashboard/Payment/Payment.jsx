@@ -14,7 +14,7 @@
 //   console.log(price);
 //   return (
 //     <div className="text-center">
-//       <div className="section-title text-center">
+//       <div className="section-title2 text-center">
 //         <h3 className="main-heading">My Payment</h3>
 //       </div>
 //       <h2>You need to pay: ${price}. Pay now</h2>
@@ -63,7 +63,7 @@ const Payment = ({ props }) => {
   );
   return (
     <div className="text-center">
-      <div className="section-title text-center">
+      <div className="section-title2 text-center">
         <h3 className="main-heading">My Payment</h3>
       </div>
       <h2>You need to pay: ${price}. Pay now</h2>

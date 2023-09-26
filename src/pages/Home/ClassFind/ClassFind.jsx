@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const ClassFind = () => {
   return (
     <div className="class-find-area">
-      <div className="class-find-content container area-title">
+      <div className="class-find-content container section-title">
         <h5>Class For You</h5>
         <h3>
           Need Help Figuring Out Which Class Is Right for You or You Child?

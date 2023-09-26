@@ -1,6 +1,6 @@
 .gallery-area {
   padding: 50px 0 70px 0;
-  background: #f9f9f9;
+  background: #fff;
 }
 
 /* CSS */
@@ -55,4 +55,8 @@
   .gallery-area {
     padding: 30px 0 50px 0;
   }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  
 }

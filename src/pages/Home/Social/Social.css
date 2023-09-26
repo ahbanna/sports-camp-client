@@ -11,7 +11,7 @@
 .social-left {
   text-align: left;
 }
-.social-left .area-title {
+.social-left .section-title {
   text-align: left;
 }
 .social-area .social-link {
@@ -120,7 +120,7 @@
     width: 100%;
     text-align: center;
   }
-  .social-left .area-title {
+  .social-left .section-title {
     text-align: center;
   }
 }
@@ -135,7 +135,7 @@
     width: 100%;
     text-align: center;
   }
-  .social-left .area-title {
+  .social-left .section-title {
     text-align: center;
   }
 }

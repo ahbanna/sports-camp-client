@@ -1,9 +1,8 @@
-.approved-class-area .area-title {
-  padding: 40px 0;
+.approved-class-area {
+  padding-bottom: 40px;
 }
-.approved-class-area .area-title p {
-  width: 70%;
-  margin: 0 auto;
+.approved-class-area .section-title {
+  padding: 40px 0;
 }
 .all-approved-class {
   display: grid;
@@ -14,10 +13,14 @@
 .single-approved-class {
   margin-bottom: 5px;
 }
+.single-approved-class .card {
+  width: 100%;
+  overflow: hidden;
+}
 .approved-class-area .card-text {
   text-align: left;
 }
-.single-approved-class .card-title.h5 {
+.single-approved-class .card-title {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -82,26 +85,16 @@
   color: #000;
 }
 
-.single-approved-class .card {
-  overflow: hidden;
-}
-
 /* Extra Large / Desktop device */
 @media (min-width: 1200px) and (max-width: 1399px) {
   .all-approved-class {
     grid-template-columns: repeat(3, 1fr);
-  }
-  .single-approved-class .card {
-    width: 22rem !important;
   }
 }
 /* Large device */
 @media (min-width: 992px) and (max-width: 1199px) {
   .all-approved-class {
     grid-template-columns: repeat(3, 1fr);
-  }
-  .single-approved-class .card {
-    width: 18.5rem !important;
   }
 }
 /* MD device */
@@ -112,9 +105,6 @@
   .single-approved-class img {
     height: 250px;
   }
-  .single-approved-class .card {
-    width: 21rem !important;
-  }
 }
 /*SM Device*/
 @media (min-width: 576px) and (max-width: 767px) {
@@ -124,9 +114,6 @@
   }
   .single-approved-class img {
     height: 220px;
-  }
-  .single-approved-class .card {
-    width: 15.5rem !important;
   }
   .select-btn {
     margin: 15px 0 10px 0;
@@ -141,15 +128,18 @@
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
   }
-  .single-approved-class .card {
-    overflow: hidden;
+  /* .single-approved-class .card {
     width: 25rem !important;
+  } */
+  .single-approved-class .card {
+    width: 100%;
+    overflow: hidden;
   }
 }
 
 /* Responsive */
 @media (max-width: 991px) {
-  .approved-class-area .area-title p {
+  .approved-class-area .section-title p {
     width: 100% !important;
   }
 }

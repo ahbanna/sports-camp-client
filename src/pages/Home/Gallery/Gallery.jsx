@@ -39,16 +39,21 @@ export function Gallery() {
   return (
     <div className="gallery-area">
       <div className="container">
-        <div className="area-title" data-aos="zoom-in">
+        <div className="section-title" data-aos="zoom-in">
           <h5>Checkout</h5>
           <h2>
             our<span> gallery</span>
           </h2>
+          <p>
+            Immerse yourself in the beauty of sport through these captivating
+            photographs, each telling a unique story of dedication, teamwork,
+            and sheer athleticism.
+          </p>
         </div>
         <div
-          data-aos="fade-up"
+          data-aos="zoom-in-up"
           data-aos-anchor-placement="top-bottom"
-          data-aos-duration="1000"
+          data-aos-duration="2000"
         >
           <LightGallery
             onInit={onInit}

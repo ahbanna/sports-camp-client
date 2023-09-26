@@ -26,7 +26,7 @@ const Join = () => {
     <div className="join-area">
       <div className="join-area-content container">
         <div className="join-area-text" data-aos="fade-right">
-          <div className="area-title">
+          <div className="section-title">
             <h5>Join Today</h5>
             <h2>
               Sports camp invites you to <span>classes</span>

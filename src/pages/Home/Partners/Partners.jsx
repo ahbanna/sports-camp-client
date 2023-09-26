@@ -12,11 +12,16 @@ import partimg9 from "../../../assets/partners/9.png";
 const Partners = () => {
   return (
     <div className="partners-area">
-      <div className="area-title" data-aos="zoom-in-down">
+      <div className="section-title" data-aos="zoom-in-down">
         <h5>Partners</h5>
         <h2>
           Our<span> Sponsorship</span>
         </h2>
+        <p>
+          In our relentless pursuit of excellence in sports, we are proud to
+          forge meaningful partnerships and collaborations with like-minded
+          organizations and sponsors who share our passion and vision.
+        </p>
       </div>
       <div className="partners-content container" data-aos="zoom-in">
         <div className="partners-img-first-row">

@@ -54,10 +54,10 @@
 }
 /* SM devices */
 @media (min-width: 576px) and (max-width: 767px) {
-  .register-area .area-title h2 {
+  .register-area .section-title h2 {
     font-size: 31px;
   }
-  .register-area .area-title {
+  .register-area .section-title {
     padding: 0;
   }
   .register-area .container {

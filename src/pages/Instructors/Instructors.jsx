@@ -23,7 +23,7 @@
 //   return (
 //     <div className="instructor-area">
 //       <div className="container">
-//         <div className="section-title">
+//         <div className="section-title2">
 //           <Slide triggerOnce>
 //             <h3 className="main-heading">Our Qualified Instructors</h3>
 //           </Slide>
@@ -81,7 +81,7 @@ const Instructors = () => {
     <div className="instructor-area">
       <PageToBanner title="Instructors"></PageToBanner>
       <div className="container">
-        <div className="area-title" data-aos="zoom-in">
+        <div className="section-title" data-aos="zoom-in">
           <h5>Our Instructors</h5>
           <h2>
             Our Qualified <span>Instructors</span>
@@ -98,7 +98,7 @@ const Instructors = () => {
         >
           {instructors.map((Instructor) => (
             <div className="single-instructor">
-              <Card style={{ width: "25rem" }} className="ins-image">
+              <Card className="ins-image">
                 <Card.Img variant="top" src={Instructor.photo} />
                 <div className="content">
                   <Card.Body className="text-center">

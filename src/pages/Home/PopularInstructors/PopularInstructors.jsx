@@ -18,7 +18,7 @@ const PopularInstructors = () => {
   }, []);
   return (
     <div className="all-popular-ins-area">
-      <div className="section-title">
+      <div className="section-title2">
         <Slide triggerOnce>
           <h3 className="main-heading">Devoted</h3>
         </Slide>

@@ -5,12 +5,12 @@
 .all-instructor {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 }
-.instructor-area .area-title {
+.instructor-area .section-title {
   padding: 40px 0;
 }
 .single-instructor {
-  margin-bottom: 35px;
   text-align: center;
 }
 .single-instructor .card-title {
@@ -20,12 +20,12 @@
   font-family: "Dancing Script", cursive;
 }
 .single-instructor img {
-  /* height: 350px;
-  width: 100%; */
   height: auto;
+  border-radius: 0;
 }
 .single-instructor .card {
   border: none;
+  width: 100%;
 }
 .single-instructor .ins-image {
   position: relative;
@@ -110,40 +110,31 @@
 }
 /* Extra Large / Desktop device */
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .single-instructor .card {
-    width: 21rem !important;
-  }
+  /* .single-instructor .card {
+    width: 100% !important;
+  } */
 }
 /* Large device */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .single-instructor .card {
-    width: 18rem !important;
-  }
-  .single-instructor {
-    margin-bottom: 20px;
+  .all-instructor {
+    grid-gap: 25px;
   }
 }
 /* MD device */
 @media (min-width: 768px) and (max-width: 991px) {
   .all-instructor {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 25px;
   }
   .single-instructor {
     margin-bottom: 0px;
-  }
-  .single-instructor .ins-image {
-    width: 100% !important;
   }
 }
 /* SM devices */
 @media (min-width: 576px) and (max-width: 767px) {
   .all-instructor {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-  }
-  .single-instructor .ins-image {
-    width: 100% !important;
+    grid-gap: 25px;
   }
   .single-instructor {
     margin-bottom: 0px;
@@ -153,7 +144,7 @@
 @media (max-width: 575px) {
   .all-instructor {
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
+    grid-gap: 25px;
     justify-items: center;
   }
   .single-instructor {

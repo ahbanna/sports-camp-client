@@ -15,7 +15,7 @@ const PopularClasses = () => {
   }, []);
   return (
     <div className="popular-class-area">
-      <div className="section-title">
+      <div className="section-title2">
         <Slide triggerOnce>
           <h3 className="main-heading">Best</h3>
         </Slide>

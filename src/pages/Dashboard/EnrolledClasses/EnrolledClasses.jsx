@@ -22,7 +22,7 @@ const EnrolledClasses = () => {
   return (
     <div>
       <Slide triggerOnce>
-        <div className="section-title text-center">
+        <div className="section-title2 text-center">
           <h3 className="main-heading">My Enrolled Classes</h3>
         </div>
       </Slide>

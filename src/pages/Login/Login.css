@@ -53,10 +53,10 @@
 }
 /* SM devices */
 @media (min-width: 576px) and (max-width: 767px) {
-  .login-area .area-title h2 {
+  .login-area .section-title h2 {
     font-size: 31px;
   }
-  .login-area .area-title {
+  .login-area .section-title {
     padding: 0;
   }
   .login-area .container {

@@ -159,7 +159,7 @@ const Classes = () => {
     <div className="approved-class-area">
       <PageToBanner title="Classes"></PageToBanner>
       <div className="container">
-        <div className="area-title" data-aos="zoom-in">
+        <div className="section-title" data-aos="zoom-in">
           <h5>Our Classes</h5>
           <h2>
             Explore Our Sports <span>Classes</span>
@@ -179,7 +179,7 @@ const Classes = () => {
           {classes.map((item) => (
             <div className="single-approved-class">
               <div key={item._id}>
-                <Card style={{ width: "19rem" }}>
+                <Card>
                   <Card.Img variant="top" src={item.classPic} />
                   <Card.Body>
                     <Card.Title>{item.className}</Card.Title>

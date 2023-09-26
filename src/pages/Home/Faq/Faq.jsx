@@ -6,11 +6,16 @@ function Faq() {
   return (
     <div className="faq-area">
       <div className="container">
-        <div className="area-title" data-aos="flip-up">
+        <div className="section-title" data-aos="flip-up">
           <h5>Faq</h5>
           <h2>
             Questions? <span>Look Here</span>
           </h2>
+          <p>
+            It designed to provide clarity and assistance on commonly asked
+            questions. If you are new to our sports community, this resource
+            aims to address inquiries and concerns you may have
+          </p>
         </div>
         <div className="faq-content">
           <div className="faq-img" data-aos="fade-up-right">

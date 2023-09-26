@@ -26,7 +26,7 @@ const AboutUs = () => {
             data-aos="fade-left"
             data-aos-duration="2000"
           >
-            <div className="area-title">
+            <div className="section-title">
               <h5>About Us</h5>
               <h2>
                 From the moment you walk through the door you know

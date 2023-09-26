@@ -10,7 +10,7 @@ const Social = () => {
     <div className="social-area" data-aos="zoom-in-down">
       <div className="social-area-content container">
         <div className="social-left">
-          <div className="area-title">
+          <div className="section-title">
             <h5>Social Media</h5>
             <h2>
               Keep Update to Our <span>Social Channel</span>

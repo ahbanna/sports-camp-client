@@ -84,7 +84,7 @@ const Register = () => {
       <PageToBanner title="Register"></PageToBanner>
       <div className="register-area-content">
         <div className="container w-50 mx-auto">
-          <div className="area-title" data-aos="zoom-in">
+          <div className="section-title" data-aos="zoom-in">
             <h5>Welcome</h5>
             <h2>
               Please <span>Resgister</span>

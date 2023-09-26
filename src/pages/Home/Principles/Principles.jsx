@@ -17,11 +17,20 @@ const Principles = () => {
   return (
     <div className="principles-area">
       <div className="principles-area-content container">
-        <div className="area-title" data-aos="zoom-in" data-aos-duration="8500">
+        <div
+          className="section-title"
+          data-aos="zoom-in"
+          data-aos-duration="8500"
+        >
           <h5>Sports Camp</h5>
           <h2>
             Our <span>Principles</span>
           </h2>
+          <p>
+            At the very heart of our vibrant sports community, we hold steadfast
+            to a set of fundamental values that not only define our character
+            but also serve as the cornerstone of our ethos.
+          </p>
         </div>
         <div className="all-principles">
           <div

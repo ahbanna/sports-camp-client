@@ -60,7 +60,7 @@ const AddClass = () => {
       {/* TODO: form design */}
       <div className="container">
         <Slide triggerOnce>
-          <div className="section-title text-center">
+          <div className="section-title2 text-center">
             <h3 className="main-heading">Add A Class</h3>
           </div>
         </Slide>
